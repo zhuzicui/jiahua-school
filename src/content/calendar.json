@@ -1,0 +1,24 @@
+{
+  "schoolYear": "2026–2027",
+  "terms": [
+    { "id": "sat-fall", "weekday": 6, "start": "2026-09-05", "end": "2026-12-19" },
+    { "id": "sat-winter", "weekday": 6, "start": "2027-01-30", "end": "2027-05-15" },
+    { "id": "wd-fall", "weekday": null, "start": "2026-09-07", "end": "2026-12-18" },
+    { "id": "wd-winter", "weekday": null, "start": "2027-02-01", "end": "2027-05-14" }
+  ],
+  "events": [
+    { "id": "e01", "date": "2026-09-05", "type": "event", "label": { "zh": "周六课程开学", "en": "First day of Saturday classes", "fr": "Premier cours du samedi" } },
+    { "id": "e02", "date": "2026-09-07", "type": "event", "label": { "zh": "平日课程开课", "en": "Weekday courses begin", "fr": "Début des cours en semaine" } },
+    { "id": "e03", "date": "2026-10-10", "type": "holiday", "label": { "zh": "感恩节，学校放假", "en": "Thanksgiving, no class", "fr": "Action de grâce, pas de cours" } },
+    { "id": "e04", "date": "2026-11-05", "type": "exam", "label": { "zh": "AMC 10A/12A 数学竞赛", "en": "AMC 10A/12A math contest", "fr": "Concours de mathématiques AMC 10A/12A" }, "note": { "zh": "Dawson College 考点", "en": "At Dawson College", "fr": "Au Collège Dawson" } },
+    { "id": "e05", "date": "2026-11-13", "type": "exam", "label": { "zh": "AMC 10B/12B 数学竞赛", "en": "AMC 10B/12B math contest", "fr": "Concours de mathématiques AMC 10B/12B" }, "note": { "zh": "Dawson College 考点", "en": "At Dawson College", "fr": "Au Collège Dawson" } },
+    { "id": "e06", "date": "2026-12-18", "type": "event", "label": { "zh": "平日课程本学期最后一次课", "en": "Last weekday class of the term", "fr": "Dernier cours en semaine du trimestre" } },
+    { "id": "e07", "date": "2026-12-19", "type": "event", "label": { "zh": "周六课程本学期最后一次课", "en": "Last Saturday class of the term", "fr": "Dernier cours du samedi du trimestre" } },
+    { "id": "e08", "date": "2026-12-20", "endDate": "2027-01-29", "type": "no-class", "label": { "zh": "寒假", "en": "Winter break", "fr": "Vacances d'hiver" } },
+    { "id": "e09", "date": "2027-01-30", "type": "event", "label": { "zh": "周六课程春季学期开课", "en": "Saturday classes resume", "fr": "Reprise des cours du samedi" } },
+    { "id": "e10", "date": "2027-02-01", "type": "event", "label": { "zh": "平日课程春季学期开课", "en": "Weekday courses resume", "fr": "Reprise des cours en semaine" } },
+    { "id": "e11", "date": "2027-03-27", "type": "holiday", "label": { "zh": "复活节，学校放假", "en": "Easter, no class", "fr": "Pâques, pas de cours" } },
+    { "id": "e12", "date": "2027-05-14", "type": "event", "label": { "zh": "平日课程本学年最后一次课", "en": "Last weekday class of the year", "fr": "Dernier cours en semaine de l'année" } },
+    { "id": "e13", "date": "2027-05-15", "type": "event", "label": { "zh": "本学年最后一次课", "en": "Last day of the school year", "fr": "Dernier cours de l'année" } }
+  ]
+}

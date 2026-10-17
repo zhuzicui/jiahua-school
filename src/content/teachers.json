@@ -1,0 +1,964 @@
+[
+  {
+    "id": "p0153",
+    "name": "陈冰",
+    "nameLatin": "Chen Bing",
+    "photo": null,
+    "bio": {
+      "zh": "天津师范大学中文系毕业，一直从事中文教学工作。出国后曾被新加坡教育部聘为中文教师，在新加坡中学任教数年。是佳华创建之后最早一批中文教师之一。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0154",
+    "name": "陈娣",
+    "nameLatin": "Chen Di",
+    "photo": null,
+    "bio": {
+      "zh": "来加拿大前为北京市府学胡同小学高级教师，从教十多年，开设公开课多次，并获论文及教学设计奖多项。到佳华后除了担任语文班教学工作外，还积极负责推动各类文化活动进行。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0155",
+    "name": "曹莉",
+    "nameLatin": "Cao Li",
+    "photo": null,
+    "bio": {
+      "zh": "天津大学计算机信息管理专业和中国民航大学经济管理专业双学位，对教育充满热情，力求以生动的教学方法提高学生学习中文的兴趣。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0156",
+    "name": "陈小婵",
+    "nameLatin": "Chen Xiaochan",
+    "photo": null,
+    "bio": {
+      "zh": "毕业于McGill大学，心理咨询方面训练有素。在佳华学校任教多年，针对母语不是汉语的学生进行教学，有较丰富的经验。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0157",
+    "name": "戴浚",
+    "nameLatin": "Dai Jun",
+    "photo": null,
+    "bio": {
+      "zh": "陕西师范大学历史专业毕业，来加后继续从事教学工作。担任佳华学校中学班教师，在教学中结合实际情况，努力使学生在学习汉语的同时了解祖国源远流长的历史文化。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0158",
+    "name": "刁惠霞",
+    "nameLatin": "Diao Huixia",
+    "photo": null,
+    "bio": {
+      "zh": "河北师范大学幼教专业毕业。从事幼儿教育工作多年，多次获奖，高级教师职称。在佳华继续担任幼儿汉语班教师，想方设法培养学生从小对学习汉语有兴趣。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0159",
+    "name": "葛晓燕",
+    "nameLatin": "Ge Xiaoyan",
+    "photo": null,
+    "bio": {
+      "zh": "加拿大儿童早期教育专业毕业。从事小学教学工作多年。来佳华学校后担任低年级语文教学工作，不断摸索总结，用自己独特的方法教授孩子们学习中文。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0160",
+    "name": "顾孝文",
+    "nameLatin": "Gu Xiaowen",
+    "photo": null,
+    "bio": {
+      "zh": "广西师范大学硕士学位，并获有对外汉语教学高级证书，热爱教学，具有20多年教学经验。在佳华继续培养青少年对汉语和中国文化的兴趣。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0161",
+    "name": "刘正梅",
+    "nameLatin": "Liu Zhengmei",
+    "photo": null,
+    "bio": {
+      "zh": "北京师范大学汉语言文学学士学位。在国内从事图书出版工作，同时为某戏剧机构的创始人兼制作人。在加拿大教授汉语多年，目前在佳华学校担任初级语文的教学工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0162",
+    "name": "鲁小侠",
+    "nameLatin": "Lu Xiaoxia",
+    "photo": null,
+    "bio": {
+      "zh": "上海外国语大学和中国广播电视大学毕业，担任小学教师和大队辅导员多年，经验丰富，来佳华学校后担任中文课教师。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0163",
+    "name": "孟宪辉",
+    "nameLatin": "Meng Xianhui",
+    "photo": null,
+    "bio": {
+      "zh": "黑龙江电大建筑学专业毕业，后从事商业和管理工作多年，对培养青少年语文爱好、阅读能力等方面有独特见解和经验。在佳华担任初级班语文老师。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0164",
+    "name": "彭莉",
+    "nameLatin": "Peng Li",
+    "photo": null,
+    "bio": {
+      "zh": "本硕分别毕业于中山大学英语（对外汉语）和外国语言学及应用语言学专业，后在麦吉尔大学攻读第二语言教育硕士。从事国际中文教育多年，对各年龄段母语非中文学习者的中文教学有较为丰富的经验。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0165",
+    "name": "石岩",
+    "nameLatin": "Shi Yan",
+    "photo": null,
+    "bio": {
+      "zh": "吉林外国语大学毕业，曾任中学教师，并教授留学生汉语多年，善于与家长沟通交流。在佳华学校担任母语为非普通话班级的汉语教师，根据学生特点有针对性地进行教学。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0166",
+    "name": "税寒青",
+    "nameLatin": "Shui Hanqing",
+    "photo": null,
+    "bio": {
+      "zh": "云南大学中文系毕业，来加拿大后多年从事对外汉语教学工作。努力培养学生学习汉语的兴趣，创造使华裔青少年了解中国文化的环境。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0167",
+    "name": "王辉",
+    "nameLatin": "Wang Hui",
+    "photo": null,
+    "bio": {
+      "zh": "哈尔滨师范大学中文学士，在国内从事语文教学工作多年。来佳华后一直担任青少年汉语课老师，并积极负责推动文化类活动。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0168",
+    "name": "王津",
+    "nameLatin": "Wang Jin",
+    "photo": null,
+    "bio": {
+      "zh": "北京语言文化大学毕业，蒙特利尔大学文学硕士。佳华学校成立以来一直担任成人汉语班教师，总结出一套成功的教学经验。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0169",
+    "name": "王红珊",
+    "nameLatin": "Wang Hongshan",
+    "photo": null,
+    "bio": {
+      "zh": "华中师范大学中文系毕业，后在武汉著名小学从教多年，高级教师职称。在佳华学校担任初中级的语文教学工作。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0170",
+    "name": "王彦",
+    "nameLatin": "Wang Yan",
+    "photo": null,
+    "bio": {
+      "zh": "毕业于天津师范大学中文系，小学高级教师，担任佳华学校小学语文课程的教学工作。经验丰富，多年在佳华从事少儿中文教育工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0171",
+    "name": "魏华荣",
+    "nameLatin": "Wei Huarong",
+    "photo": null,
+    "bio": {
+      "zh": "华中师范大学幼儿教育专业毕业，多年从事低幼儿童教育，高级教师职称。在佳华学校一直担任低年级语文教师。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0172",
+    "name": "吴颖岚",
+    "nameLatin": "Wu Yinglan",
+    "photo": null,
+    "bio": {
+      "zh": "中央广播电视大学本科学位，担任管理工作多年，在教育儿童、少年启蒙学习中文方面有自己独特的方法。来佳华后，钻研海外华文教育的技巧，在实践中不断提高教学能力。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0173",
+    "name": "夏忆",
+    "nameLatin": "Xia Yi",
+    "photo": null,
+    "bio": {
+      "zh": "辽宁大学中文系毕业，担任过记者并从事语言教学工作。来佳华以后教授中高级汉语班的课程，在教学中文史结合。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0174",
+    "name": "夏艳",
+    "nameLatin": "Xia Yan",
+    "photo": null,
+    "bio": {
+      "zh": "新疆大学中文系毕业，曾任教师。出国后曾在美国、澳大利亚等地的中文学校任教。来佳华后担任汉语教师，努力培养学生学习汉语的兴趣。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0175",
+    "name": "夏天",
+    "nameLatin": "Xia Tian",
+    "photo": null,
+    "bio": {
+      "zh": "上海师范大学汉语言文学学士，后到英国和蒙特利尔大学深造。在国内曾任“萌芽”等多家杂志和报社编辑，并在上海从事过中学语文教育工作。在佳华多年担任中学语文班的教学工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0176",
+    "name": "谢芸佳",
+    "nameLatin": "Xie Yunjia",
+    "photo": null,
+    "bio": {
+      "zh": "本科毕业于山东大学汉语国际教育专业，硕士就读于McGill教育学院。目前在佳华进行青少年汉语教学工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0177",
+    "name": "邢征",
+    "nameLatin": "Xing Zheng",
+    "photo": null,
+    "bio": {
+      "zh": "上海师范大学对外汉语专业研究生，2008年至2010年任美国新墨西哥州立大学孔子学院教师。在佳华学校担任汉语课教师，教授母语非普通话的华裔和非华裔学生。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0178",
+    "name": "徐娇",
+    "nameLatin": "Xu Jiao",
+    "photo": null,
+    "bio": {
+      "zh": "沈阳师范大学中文学士毕业，小学高级教师，担任佳华学校语文和数学教师。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0179",
+    "name": "薛枫莲",
+    "nameLatin": "Xue Fenglian",
+    "photo": null,
+    "bio": {
+      "zh": "吉林市幼儿师范毕业，小学高级教师。来佳华多年，经验丰富，担任小学语文和数学的教学工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0180",
+    "name": "薛丽娟",
+    "nameLatin": "Xue Lijuan",
+    "photo": null,
+    "bio": {
+      "zh": "南京师范大学本科毕业后，又获教育科学院硕士学位，在国内院校曾任教师和学生管理工作，来佳华后担任青少年汉语教学工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0181",
+    "name": "杨婕",
+    "nameLatin": "Yang Jie",
+    "photo": null,
+    "bio": {
+      "zh": "华东师范大学中文系毕业后又在McGill大学教育系获得硕士学位。在佳华担任青少年和成人班的汉语教学工作。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0182",
+    "name": "杨莉",
+    "nameLatin": "Yang Li",
+    "photo": null,
+    "bio": {
+      "zh": "Louisville大学毕业，上海师范大学中小学语文教师进修证书。来佳华后一直担任语文和数学班的教学工作，并积极负责推动各类文化活动。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0183",
+    "name": "杨书涓",
+    "nameLatin": "Yang Shujuan",
+    "photo": null,
+    "bio": {
+      "zh": "黑龙江大学中文系毕业，加拿大儿童早期教育专业毕业。有着丰富的教学经验和深厚的中文功底。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0184",
+    "name": "岳亮",
+    "nameLatin": "Yue Liang",
+    "photo": null,
+    "bio": {
+      "zh": "中央戏剧学院戏剧文学系毕业，曾任记者和电视台节目制作。到佳华后担任高级班语文老师。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0185",
+    "name": "张超",
+    "nameLatin": "Zhang Chao",
+    "photo": null,
+    "bio": {
+      "zh": "南开大学中文系文学学士，在佳华教授中文的同时攻读McGill大学的教育硕士学位。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0186",
+    "name": "朱霞",
+    "nameLatin": "Zhu Xia",
+    "photo": null,
+    "bio": {
+      "zh": "河南大学毕业，曾任策划编辑、财务管理等工作。热爱阅读，擅长朗诵，在对华裔青少年的中文教学中发挥自己的优势。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0187",
+    "name": "邹雪香",
+    "nameLatin": "Zou Xuexiang",
+    "photo": null,
+    "bio": {
+      "zh": "长春工程学院毕业，后获得国际汉语教师资格证书，有扎实的数学专业知识和中文教育经验。在佳华教授小学数学课程，因材施教。"
+    },
+    "courseTypes": [
+      "chinese"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0188",
+    "name": "常湉玉",
+    "nameLatin": "Chang Tianyu",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia大学工商管理硕士学位。自大学生时代起在佳华学校担任数学教师。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0189",
+    "name": "董力",
+    "nameLatin": "Dong Li",
+    "photo": null,
+    "bio": {
+      "zh": "北京师范大学数学系毕业，北京四中和北京八中资深数学教师，五十多年的教学经验。到佳华学校后继续担任数学老师。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0190",
+    "name": "黄晓燕",
+    "nameLatin": "Huang Xiaoyan",
+    "photo": null,
+    "bio": {
+      "zh": "福州师范高等专科学院数学教育系毕业，中学一级教师，加入佳华学校数学教师队伍多年。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0191",
+    "name": "纪雯",
+    "nameLatin": "Ji Wen",
+    "photo": null,
+    "bio": {
+      "zh": "北京理工大学数学系硕士学位，在北京曾任中学班主任及数学老师多年。在佳华学校担任中学数学班的老师。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0192",
+    "name": "姜海英",
+    "nameLatin": "Jiang Haiying",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia商学院双学士，担任数学教师教授不同级别的学生，根据学生特点进行教学。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0193",
+    "name": "李萍",
+    "nameLatin": "Li Ping",
+    "photo": null,
+    "bio": {
+      "zh": "烟台师范学院数学教育专业毕业后，从事数学教育担任班主任十五年，在佳华学校针对华裔青少年的特点进行数学教育。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0194",
+    "name": "陆恩铭",
+    "nameLatin": "Lu Enming",
+    "photo": null,
+    "bio": {
+      "zh": "上海师范大学数学系毕业，高级教师职称。在佳华学校担任各级数学班教师。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0195",
+    "name": "马红跃",
+    "nameLatin": "Ma Hongyue",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia大学学前教育专业学士，在中国曾担任班主任和教师多年，来佳华学校后担任数学教师。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0196",
+    "name": "孙琪",
+    "nameLatin": "Sun Qi",
+    "photo": null,
+    "bio": {
+      "zh": "学前教育专业，曾任河南大学讲师，30多年低幼儿童少年教育经验，并有太极、木兰等方面的专业特长。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0197",
+    "name": "孙朝晖",
+    "nameLatin": "Sun Zhaohui",
+    "photo": null,
+    "bio": {
+      "zh": "北京师范大学毕业，担任数学教师多年。在佳华学校担任各年级数学教师。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0198",
+    "name": "王红梅",
+    "nameLatin": "Wang Hongmei",
+    "photo": null,
+    "bio": {
+      "zh": "华东师范大学数学专业毕业，高级教师职称。在佳华担任初中各年级数学教师。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0199",
+    "name": "王汝芬",
+    "nameLatin": "Wang Rufen",
+    "photo": null,
+    "bio": {
+      "zh": "江苏师范学院毕业后在中学担任数学教学工作近40年。在佳华担任初中各年级数学班教师，在教学中把数学和汉语学习相结合。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0200",
+    "name": "许平",
+    "nameLatin": "Xu Ping",
+    "photo": null,
+    "bio": {
+      "zh": "英国剑桥大学博士学位，从事科学研究工作多年，在佳华教授中学以上数学，重点培养学生解决问题的能力。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0201",
+    "name": "杨筱芳",
+    "nameLatin": "Yang Xiaofang",
+    "photo": null,
+    "bio": {
+      "zh": "华中师范大学毕业，从事中小学教学和管理工作几十年。在佳华学校担任不同层次的数学教学工作。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0202",
+    "name": "杨学磊",
+    "nameLatin": "Yang Xuelei",
+    "photo": null,
+    "bio": {
+      "zh": "高级教师，曾任小学语文、数学教师近三十年。到佳华后积极调整教学方法，受到学生和家长的喜爱。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0203",
+    "name": "赵瑾",
+    "nameLatin": "Zhao Jin",
+    "photo": null,
+    "bio": {
+      "zh": "首都师范大学数学系硕士，中学一级教师，在佳华担任不同级别的数学班教师。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0204",
+    "name": "周家瑞",
+    "nameLatin": "Zhou Jiarui",
+    "photo": null,
+    "bio": {
+      "zh": "沈阳大学师范学院数学系学士，曾在重点中学担任数学教师和班主任多年。"
+    },
+    "courseTypes": [
+      "math"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0205",
+    "name": "陈思晴",
+    "nameLatin": "Chen Siqing",
+    "photo": null,
+    "bio": {
+      "zh": "巴黎大学美术设计毕业，多年从事设计和儿童美术教育工作，努力培养学生的想像力。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0206",
+    "name": "樊娟",
+    "nameLatin": "Fan Juan",
+    "photo": null,
+    "bio": {
+      "zh": "江西师范大学美术专业毕业，曾任小学美术教师和教育机构美术教育总监，多次获得国家和省级美术教育奖项。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0207",
+    "name": "刘若瑾",
+    "nameLatin": "Liu Ruojin",
+    "photo": null,
+    "bio": {
+      "zh": "鲁迅美术学院毕业，曾在国内担任中小学美术教师。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0208",
+    "name": "王国华",
+    "nameLatin": "Wang Guohua",
+    "photo": null,
+    "bio": {
+      "zh": "上海美术学校毕业，在国内从事美术教育和培训工作多年。佳华创建起担任美术教师。被中国侨办授予“海外优秀华文教师”，并荣获“海外教育贡献奖”。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0209",
+    "name": "吴道恩",
+    "nameLatin": "Wu Daoen",
+    "photo": null,
+    "bio": {
+      "zh": "美术设计专业毕业后一直从事工艺设计工作。在佳华学校担任儿童美术的教学工作。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0210",
+    "name": "余鹏",
+    "nameLatin": "Yu Peng",
+    "photo": null,
+    "bio": {
+      "zh": "武汉大学艺术系毕业，一直从事美术创作和教学工作，担任儿童美术、初级美术以及手工艺术的教学。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0211",
+    "name": "张和",
+    "nameLatin": "Zhang He",
+    "photo": null,
+    "bio": {
+      "zh": "北京师范学院美术专业、Concordia大学设计系毕业。任佳华学校美术教师多年。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0212",
+    "name": "植梅",
+    "nameLatin": "Zhi Mei",
+    "photo": null,
+    "bio": {
+      "zh": "中央美术学院国画专业、Concordia艺术系毕业，从事美术教育工作多年，多次获奖。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "art"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0213",
+    "name": "姜适迦",
+    "nameLatin": "Jiang Shijia",
+    "photo": null,
+    "bio": {
+      "zh": "曾在黑龙江戏剧学院和中国戏剧学院学习深造。在佳华学校担任舞蹈教学工作，同时是Concordia戏剧专业的访问教师。"
+    },
+    "courseTypes": [
+      "dance"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0214",
+    "name": "何晓任",
+    "nameLatin": "He Xiaoren",
+    "photo": null,
+    "bio": {
+      "zh": "职业围棋五段，曾任中国国家围棋少年队教练。自佳华成立后一直担任围棋教师，培养了大批热爱围棋的青少年。被中国侨办授予“海外优秀华文教师”。"
+    },
+    "courseTypes": [
+      "chess"
+    ],
+    "award": true
+  },
+  {
+    "id": "p0215",
+    "name": "姜伟",
+    "nameLatin": "Jiang Wei",
+    "photo": null,
+    "bio": {
+      "zh": "南京理工大学工程硕士，获棋协象棋大师，曾任世界象棋联合会执委、加拿大象棋协会秘书长。所教学生在魁北克比赛名列前茅。"
+    },
+    "courseTypes": [
+      "chess"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0216",
+    "name": "刘洪举",
+    "nameLatin": "Liu Hongju",
+    "photo": null,
+    "bio": {
+      "zh": "少年时开始在专业教练指导下练习乒乓球，专研青少年学习乒乓的方法，有丰富的经验。"
+    },
+    "courseTypes": [
+      "pingpong"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0217",
+    "name": "黄进安",
+    "nameLatin": "Huang Jin'an",
+    "photo": null,
+    "bio": {
+      "zh": "McGill大学博士学位，高级工程师。在佳华担任乒乓教练，让学习乒乓的学生有足够的机会训练提高。"
+    },
+    "courseTypes": [
+      "pingpong"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0218",
+    "name": "Ashley",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Wilfrid Laurier University 学士学位，并在英国获得英语教学证书。曾在北京做过英语助教。在佳华担任初级英语班级教师。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0219",
+    "name": "Bernie",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia大学语言专业，多年从事中小学英语教学和教材编写工作，获TESL执教证书。在佳华担任中高级英语班的教学。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0220",
+    "name": "Felibeth",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "菲律宾大学基础教育专业毕业，获幼儿教育证书，担任小学和幼儿园教师多年，在佳华学校教授英语课程。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0221",
+    "name": "Kevin",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia大学教育专业毕业，获安大略省ESL证书。在佳华学校教授英语，结合实际生活提高学生学习兴趣。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0222",
+    "name": "Maisie",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia英语教学专业硕士学位，担任中学和大学英语老师多年。在佳华担任中高年级的英语教学工作。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0223",
+    "name": "Nagen",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia大学毕业后在中小学担任教学工作，在佳华担任中级班英语教学工作。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0224",
+    "name": "Petrisya",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia大学英语为第二语言教学专业毕业，又获McGill大学教育学硕士。在佳华教授英语。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0225",
+    "name": "Rachel",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia文学学士，获TESL执教证书。在佳华担任英语班教师，能针对讲广东话的华裔子女进行教学。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  },
+  {
+    "id": "p0226",
+    "name": "Rachid",
+    "nameLatin": "",
+    "photo": null,
+    "bio": {
+      "zh": "Montreal大学硕士学位，获TESL教学证书，现为Montreal大学博士研究生，在佳华担任中高级英语教师。"
+    },
+    "courseTypes": [
+      "english"
+    ],
+    "award": false
+  }
+]

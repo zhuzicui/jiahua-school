@@ -1,56 +1,54 @@
-# Untitled UI starter kit for Next.js
+# Jia Hua School website
 
-This is an official Untitled UI starter kit for Next.js. Kickstart your Untitled UI project with Next.js in seconds.
+Public website for 蒙特利尔佳华学校 / Jia Hua School of Montreal, built from the
+"Jia Hua School website redesign" PRD. Next.js (App Router) + Tailwind CSS +
+[Untitled UI React](https://www.untitledui.com/react) components, deployed on Vercel.
 
-## Untitled UI React
-
-[Untitled UI React](https://www.untitledui.com/react) is the world’s largest collection of open-source React UI components. Everything you need to design and develop modern, beautiful interfaces—fast.
-
-Built with React 19.3, Tailwind CSS v4.3, TypeScript 6.0, and React Aria, Untitled UI React components deliver modern performance, type safety, and maintainability.
-
-[Learn more](https://www.untitledui.com/react) • [Documentation](https://www.untitledui.com/react/docs/introduction) • [Figma](https://www.untitledui.com/figma) • [FAQs](https://www.untitledui.com/faqs)
-
-## Getting started
-
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run dev        # http://localhost:3000 (redirects to /zh)
+npm run build      # production build; CI runs this on every pull request
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Node 22 or newer.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How it is organised
 
-## Resources
+| Path | What it holds |
+| --- | --- |
+| `src/app/[locale]/…` | One folder per page. Every page exists at `/zh`, `/fr` and `/en`. |
+| `src/content/*.json` | Site content (courses, teachers, calendar, FAQ, news…). Seeded from the CMS prototype in Oct 2026. |
+| `src/lib/content.ts` | The only place pages read content from. The CMS milestone replaces these functions with database reads. |
+| `src/i18n/dictionary.ts` | Interface text (menus, buttons, labels) in 中文 / FR / EN. |
+| `src/components/site/` | Jia Hua components (header, footer, course finder, teacher directory…). |
+| `src/components/base`, `application`, `foundations` | Untitled UI components from the starter kit. Prefer these over new ones. |
+| `src/styles/theme.css` | Untitled UI tokens with the Jia Hua red scale (#E84A5F) in place of purple. |
+| `public/illustrations/` | The 12 course illustrations. |
 
-Untitled UI React is built on top of [Untitled UI Figma](https://www.untitledui.com/figma), the world's largest and most popular Figma UI kit and design system. Explore more:
+## Content rules
 
-**[Untitled UI Figma:](https://www.untitledui.com/react/resources/figma-files)** The world's largest Figma UI kit and design system.
-<br/>
-**[Untitled UI Icons:](https://www.untitledui.com/react/resources/icons)** A clean, consistent, and neutral icon library crafted specifically for modern UI design.
-<br/>
-**[Untitled UI file icons:](https://www.untitledui.com/react/resources/file-icons)** Free file format icons, designed specifically for modern web and UI design.
-<br/>
-**[Untitled UI flag icons:](https://www.untitledui.com/react/resources/flag-icons)** Free country flag icons, designed specifically for modern web and UI design.
-<br/>
-**[Untitled UI avatars:](https://www.untitledui.com/react/resources/avatars)** Free placeholder user avatars and profile pictures to use in your projects.
-<br/>
-**[Untitled UI logos:](https://www.untitledui.com/react/resources/logos)** Free fictional company logos to use in your projects.
+- **Languages**: Chinese is the source language. Every text field is `{ zh, fr?, en? }`.
+  A missing translation shows the Chinese text with a small "中文" tag or notice, never an empty block.
+- **Students' names**: first name + last initial only, until consent is recorded on the registration form.
+- **Calendar**: `src/content/calendar.json` holds the terms and dated events (holidays, first/last days, exams).
+  The weekly timetable is the "by day" view of Courses, not part of the calendar.
+- **Promoted news**: a News post with `"promote": true` shows on the home page until `promoteUntil`, and always stays in the News list.
+- **Hidden for now**: Summer Camps and Contest Results (PRD rec. 11 and 12).
 
-## License
+## Changing things
 
-Untitled UI React open-source components are licensed under the MIT license, which means you can use them for free in unlimited commercial projects.
+Code changes are made with Claude Code on a branch, opened as a pull request, and deploy
+automatically on merge once the repository is connected to Vercel.
 
-> [!NOTE]
-> This license applies only to the starter kit and to the components included in this open-source repository. [Untitled UI React PRO](https://www.untitledui.com/react) includes hundreds more advanced UI components and page examples and is subject to a separate [license agreement](https://www.untitledui.com/license).
+1. Edit the JSON in `src/content/` for content, or the page in `src/app/[locale]/` for layout.
+2. `npm run build` must pass.
+3. Open a pull request; Vercel posts a preview link on it.
 
-[Untitled UI license agreement →](https://www.untitledui.com/license)
+## Next milestone
 
-[Frequently asked questions →](https://www.untitledui.com/faqs)
+Staff sign-in at `/admin` (emailed one-time link or Google, editor list kept by Admins),
+inline editing for page text, a table editor with Excel import for courses/teachers/calendar,
+bulk upload for art and essays, and a Translate button (Claude API) that drafts French and
+English for review. Content moves from `src/content/` into Supabase (Postgres + Storage).

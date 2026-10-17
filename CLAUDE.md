@@ -1,3 +1,13 @@
+## Jia Hua School project
+
+This repository is the Jia Hua School of Montreal website. Read README.md first.
+
+- Pages live in `src/app/[locale]/` and must work at /zh, /fr and /en. Chinese is the source language.
+- Read content only through `src/lib/content.ts`; interface text goes in `src/i18n/dictionary.ts` for all three languages.
+- Use Untitled UI components and semantic colour classes (below). Brand red replaces purple in `src/styles/theme.css`.
+- Students' names: first name + last initial only.
+- Public pages are designed for phones first; check at 390px wide with no horizontal scroll.
+
 ## Project Overview
 
 This is an **Untitled UI React** component library project built with:

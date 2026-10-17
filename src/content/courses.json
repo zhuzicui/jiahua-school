@@ -1,0 +1,2333 @@
+[
+  {
+    "id": "k0042",
+    "code": "YY1D",
+    "name": {
+      "en": "Chinese for Teenagers 1",
+      "fr": "Chinois pour adolescents 1",
+      "zh": "青少年中文 1"
+    },
+    "category": "chinese",
+    "day": "wed",
+    "time": "15:30–17:30",
+    "ageMin": 11,
+    "ageMax": null,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0043",
+    "code": "E21D",
+    "name": {
+      "en": "English Intermediate",
+      "fr": "Anglais intermédiaire",
+      "zh": "中级英语"
+    },
+    "category": "english",
+    "day": "mon",
+    "time": "15:30–17:30",
+    "ageMin": 9,
+    "ageMax": null,
+    "level": {
+      "zh": "中级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0044",
+    "code": "HSK1",
+    "name": {
+      "en": "HSK Tutoring",
+      "fr": "Préparation au HSK",
+      "zh": "汉语水平考试辅导"
+    },
+    "category": "chinese",
+    "day": "tue",
+    "time": "18:30–20:00",
+    "ageMin": 13,
+    "ageMax": null,
+    "level": {
+      "zh": "各级汉语水平考试准备（五周一期）"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0045",
+    "code": "E32D",
+    "name": {
+      "en": "English Advanced II",
+      "fr": "Anglais avancé II",
+      "zh": "高级英语 II"
+    },
+    "category": "english",
+    "day": "thu",
+    "time": "18:30–20:30",
+    "ageMin": 15,
+    "ageMax": null,
+    "level": {
+      "zh": "高级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0046",
+    "code": "K01A",
+    "name": {
+      "en": "Chinese Preschool 1",
+      "fr": "Chinois préscolaire 1",
+      "zh": "幼儿汉语 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 4,
+    "ageMax": 5,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0047",
+    "code": "K02A",
+    "name": {
+      "en": "Chinese Preschool 2",
+      "fr": "Chinois préscolaire 2",
+      "zh": "幼儿汉语 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 5,
+    "ageMax": 6,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0048",
+    "code": "T01",
+    "name": {
+      "en": "Chinese Special 1",
+      "fr": "Chinois adapté 1",
+      "zh": "语文特殊 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 8,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0049",
+    "code": "T02",
+    "name": {
+      "en": "Chinese Special 2",
+      "fr": "Chinois adapté 2",
+      "zh": "语文特殊 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 8,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0050",
+    "code": "T03",
+    "name": {
+      "en": "Chinese Special 3",
+      "fr": "Chinois adapté 3",
+      "zh": "语文特殊 3"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 9,
+    "ageMax": 11,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0051",
+    "code": "T04",
+    "name": {
+      "en": "Chinese Special 4",
+      "fr": "Chinois adapté 4",
+      "zh": "语文特殊 4"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 9,
+    "ageMax": 11,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0052",
+    "code": "T05",
+    "name": {
+      "en": "Chinese Special 5",
+      "fr": "Chinois adapté 5",
+      "zh": "语文特殊 5"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0053",
+    "code": "T07",
+    "name": {
+      "en": "Chinese Special 7",
+      "fr": "Chinois adapté 7",
+      "zh": "语文特殊 7"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0054",
+    "code": "T08",
+    "name": {
+      "en": "Chinese Special 8",
+      "fr": "Chinois adapté 8",
+      "zh": "语文特殊 8"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "轻松学中文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0055",
+    "code": "Y01A",
+    "name": {
+      "en": "Chinese Elementary 1",
+      "fr": "Chinois primaire 1",
+      "zh": "小学语文 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "中文一册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0056",
+    "code": "Y02A",
+    "name": {
+      "en": "Chinese Elementary 2",
+      "fr": "Chinois primaire 2",
+      "zh": "小学语文 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "中文二册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0057",
+    "code": "Y03A",
+    "name": {
+      "en": "Chinese Elementary 3",
+      "fr": "Chinois primaire 3",
+      "zh": "小学语文 3"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "中文三册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0058",
+    "code": "Y04A",
+    "name": {
+      "en": "Chinese Elementary 4",
+      "fr": "Chinois primaire 4",
+      "zh": "小学语文 4"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "中文四册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0059",
+    "code": "Y05A",
+    "name": {
+      "en": "Chinese Elementary 5",
+      "fr": "Chinois primaire 5",
+      "zh": "小学语文 5"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "中文五/六册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0060",
+    "code": "Y22A",
+    "name": {
+      "en": "Chinese High School 2",
+      "fr": "Chinois secondaire 2",
+      "zh": "中学语文 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 13,
+    "ageMax": null,
+    "level": {
+      "zh": "中学语文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0061",
+    "code": "Y23A",
+    "name": {
+      "en": "Chinese High School 3",
+      "fr": "Chinois secondaire 3",
+      "zh": "高中语文"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 13,
+    "ageMax": null,
+    "level": {
+      "zh": "中学语文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0062",
+    "code": "YA1",
+    "name": {
+      "en": "Adult Chinese Elementary 1",
+      "fr": "Chinois pour adultes, débutant 1",
+      "zh": "成人汉语初级 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "长城汉语"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0063",
+    "code": "YA2",
+    "name": {
+      "en": "Adult Chinese Elementary 2",
+      "fr": "Chinois pour adultes, débutant 2",
+      "zh": "成人汉语初级 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "长城汉语"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0064",
+    "code": "YA3",
+    "name": {
+      "en": "Adult Chinese Elementary 3",
+      "fr": "Chinois pour adultes, débutant 3",
+      "zh": "成人汉语初级 3"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "长城汉语"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0065",
+    "code": "HSK2",
+    "name": {
+      "en": "HSK Tutoring",
+      "fr": "Préparation au HSK",
+      "zh": "汉语水平考试辅导"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "9:30–11:00",
+    "ageMin": 13,
+    "ageMax": null,
+    "level": {
+      "zh": "各级汉语水平考试准备（五周一期）"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0066",
+    "code": "S01A",
+    "name": {
+      "en": "Math Elementary, Grade 1",
+      "fr": "Mathématiques primaire, Grade 1",
+      "zh": "数学 1年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学一年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0067",
+    "code": "S02A",
+    "name": {
+      "en": "Math Elementary, Grade 2",
+      "fr": "Mathématiques primaire, Grade 2",
+      "zh": "数学 2年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学二年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0068",
+    "code": "S03A",
+    "name": {
+      "en": "Math Elementary, Grade 3",
+      "fr": "Mathématiques primaire, Grade 3",
+      "zh": "数学 3年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学三年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0069",
+    "code": "S04A",
+    "name": {
+      "en": "Math Elementary, Grade 4",
+      "fr": "Mathématiques primaire, Grade 4",
+      "zh": "数学 4年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学四年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0070",
+    "code": "S05A",
+    "name": {
+      "en": "Math Elementary, Grade 5",
+      "fr": "Mathématiques primaire, Grade 5",
+      "zh": "数学 5年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学五年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0071",
+    "code": "S06A",
+    "name": {
+      "en": "Math Elementary, Grade 6",
+      "fr": "Mathématiques primaire, Grade 6",
+      "zh": "数学 6年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学六年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0072",
+    "code": "S21A",
+    "name": {
+      "en": "Math High School, Grade 7",
+      "fr": "Mathématiques secondaire, Grade 7",
+      "zh": "数学 7年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "数学七年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0073",
+    "code": "S22A",
+    "name": {
+      "en": "Math High School, Grade 8",
+      "fr": "Mathématiques secondaire, Grade 8",
+      "zh": "数学 8年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "数学八年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0074",
+    "code": "S23A",
+    "name": {
+      "en": "Math High School, Grade 9",
+      "fr": "Mathématiques secondaire, Grade 9",
+      "zh": "数学 9年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "数学九年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0075",
+    "code": "E11A",
+    "name": {
+      "en": "English Elementary 1",
+      "fr": "Anglais débutant 1",
+      "zh": "初级英语 1"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0076",
+    "code": "E32A",
+    "name": {
+      "en": "English Advanced 1",
+      "fr": "Anglais avancé 1",
+      "zh": "高级英语 1"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 14,
+    "ageMax": null,
+    "level": {
+      "zh": "高级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0077",
+    "code": "F11A",
+    "name": {
+      "en": "French Elementary 1",
+      "fr": "Français débutant 1",
+      "zh": "初级法语 1"
+    },
+    "category": "french",
+    "day": "sat",
+    "time": "9:30–11:20",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0078",
+    "code": "Q21",
+    "name": {
+      "en": "Ping-pong 1",
+      "fr": "Ping-pong 1",
+      "zh": "乒乓一"
+    },
+    "category": "pingpong",
+    "day": "sat",
+    "time": "10:00–11:00",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "乒乓基础练习"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0079",
+    "code": "Q51",
+    "name": {
+      "en": "Guitar Basic 1",
+      "fr": "Guitare, base 1",
+      "zh": "基础吉他 1"
+    },
+    "category": "music",
+    "day": "sat",
+    "time": "10:00–11:00",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "吉他基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0080",
+    "code": "W81",
+    "name": {
+      "en": "Taiji",
+      "fr": "Taï-chi",
+      "zh": "太极拳"
+    },
+    "category": "martial",
+    "day": "sat",
+    "time": "10:00–11:00",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "太极基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0081",
+    "code": "W01",
+    "name": {
+      "en": "Go 1",
+      "fr": "Jeu de go 1",
+      "zh": "围棋一"
+    },
+    "category": "chess",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "开局 / 初步"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0082",
+    "code": "W41",
+    "name": {
+      "en": "Children's Dance",
+      "fr": "Danse pour enfants",
+      "zh": "少儿舞蹈"
+    },
+    "category": "dance",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "舞蹈基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0083",
+    "code": "W51",
+    "name": {
+      "en": "Gongfu for kids",
+      "fr": "Kung-fu pour enfants",
+      "zh": "少儿武术"
+    },
+    "category": "martial",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "武术基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0084",
+    "code": "Q11",
+    "name": {
+      "en": "Chess 1",
+      "fr": "Échecs 1",
+      "zh": "国际象棋一"
+    },
+    "category": "chess",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "象棋初步"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0085",
+    "code": "Q12",
+    "name": {
+      "en": "Chess 2",
+      "fr": "Échecs 2",
+      "zh": "国际象棋二"
+    },
+    "category": "chess",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "象棋中级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0086",
+    "code": "Q22",
+    "name": {
+      "en": "Ping-pong 1",
+      "fr": "Ping-pong 1",
+      "zh": "乒乓一"
+    },
+    "category": "pingpong",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "乒乓基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0087",
+    "code": "Q31",
+    "name": {
+      "en": "Children's Music",
+      "fr": "Musique pour enfants",
+      "zh": "少儿音乐"
+    },
+    "category": "music",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 5,
+    "ageMax": 8,
+    "level": {
+      "zh": "声乐 / 乐理基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0088",
+    "code": "Q52",
+    "name": {
+      "en": "Guitar Basic 2",
+      "fr": "Guitare, base 2",
+      "zh": "基础吉他 2"
+    },
+    "category": "music",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "吉他基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0089",
+    "code": "Z05",
+    "name": {
+      "en": "Children's Painting 1",
+      "fr": "Peinture pour enfants 1",
+      "zh": "儿童画启蒙 1"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "绘画基础 / 想象模仿"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0090",
+    "code": "Z06",
+    "name": {
+      "en": "Children's Painting 2",
+      "fr": "Peinture pour enfants 2",
+      "zh": "儿童画启蒙 2"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "绘画基础 / 想象模仿"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0091",
+    "code": "SAI",
+    "name": {
+      "en": "Robotics for kids",
+      "fr": "Robotique pour enfants",
+      "zh": "机器人（少儿班）"
+    },
+    "category": "robotics",
+    "day": "sat",
+    "time": "11:30–12:30",
+    "ageMin": 6,
+    "ageMax": 8,
+    "level": {
+      "zh": "机器人初级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0092",
+    "code": "K02B",
+    "name": {
+      "en": "Chinese Preschool 2",
+      "fr": "Chinois préscolaire 2",
+      "zh": "幼儿汉语 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 5,
+    "ageMax": 6,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0093",
+    "code": "Y02B",
+    "name": {
+      "en": "Chinese Elementary 2",
+      "fr": "Chinois primaire 2",
+      "zh": "小学语文 2"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "中文二册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0094",
+    "code": "Y03B",
+    "name": {
+      "en": "Chinese Elementary 3",
+      "fr": "Chinois primaire 3",
+      "zh": "小学语文 3"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "中文三册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0095",
+    "code": "Y04B",
+    "name": {
+      "en": "Chinese Elementary 4",
+      "fr": "Chinois primaire 4",
+      "zh": "小学语文 4"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "中文四册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0096",
+    "code": "Y05B",
+    "name": {
+      "en": "Chinese Elementary 5",
+      "fr": "Chinois primaire 5",
+      "zh": "小学语文 5"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "中文五/六册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0097",
+    "code": "Y07B",
+    "name": {
+      "en": "Chinese Intermediate 7",
+      "fr": "Chinois intermédiaire 7",
+      "zh": "小学语文 7"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "中文七/八册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0098",
+    "code": "Y09B",
+    "name": {
+      "en": "Chinese Intermediate 9",
+      "fr": "Chinois intermédiaire 9",
+      "zh": "小学语文 9"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "中文九/十册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0099",
+    "code": "Y11B",
+    "name": {
+      "en": "Chinese Intermediate 11",
+      "fr": "Chinois intermédiaire 11",
+      "zh": "小学语文 11"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "中文十一/十二册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0100",
+    "code": "Y21B",
+    "name": {
+      "en": "Chinese High School 1",
+      "fr": "Chinois secondaire 1",
+      "zh": "中学语文 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0101",
+    "code": "Y23B",
+    "name": {
+      "en": "Chinese High School 3",
+      "fr": "Chinois secondaire 3",
+      "zh": "中学语文 3"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0102",
+    "code": "Y33B",
+    "name": {
+      "en": "Chinese Advanced 3",
+      "fr": "Chinois avancé 3",
+      "zh": "高级语文 3"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "中国文学 / 历史"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0103",
+    "code": "YY1",
+    "name": {
+      "en": "Chinese for Teenagers 1",
+      "fr": "Chinois pour adolescents 1",
+      "zh": "青少年中文 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 11,
+    "ageMax": null,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0104",
+    "code": "YY4",
+    "name": {
+      "en": "Chinese for Teenagers 4",
+      "fr": "Chinois pour adolescents 4",
+      "zh": "青少年中文 4"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 11,
+    "ageMax": null,
+    "level": {
+      "zh": "佳华自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0105",
+    "code": "YG1",
+    "name": {
+      "en": "Learn Chinese Through Stories",
+      "fr": "Apprendre le chinois par les histoires",
+      "zh": "听故事，学中文"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0106",
+    "code": "S01B",
+    "name": {
+      "en": "Math Elementary, Grade 1",
+      "fr": "Mathématiques primaire, Grade 1",
+      "zh": "数学 1年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": 8,
+    "level": {
+      "zh": "数学一年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0107",
+    "code": "S22B",
+    "name": {
+      "en": "Math High School, Grade 8",
+      "fr": "Mathématiques secondaire, Grade 8",
+      "zh": "数学 8年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "数学八年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0108",
+    "code": "S23B",
+    "name": {
+      "en": "Math High School, Grade 9",
+      "fr": "Mathématiques secondaire, Grade 9",
+      "zh": "数学 9年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "数学九年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0109",
+    "code": "S31B",
+    "name": {
+      "en": "Math High School, Grade 10",
+      "fr": "Mathématiques secondaire, Grade 10",
+      "zh": "数学 10年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 15,
+    "ageMax": null,
+    "level": {
+      "zh": "数学十年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0110",
+    "code": "S32B",
+    "name": {
+      "en": "Math High School, Grade 11",
+      "fr": "Mathématiques secondaire, Grade 11",
+      "zh": "数学 11年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 15,
+    "ageMax": null,
+    "level": {
+      "zh": "数学十一年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0111",
+    "code": "F22",
+    "name": {
+      "en": "French Intermediate",
+      "fr": "Français intermédiaire",
+      "zh": "法语中级"
+    },
+    "category": "french",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 10,
+    "ageMax": 14,
+    "level": {
+      "zh": "中级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0112",
+    "code": "E11B",
+    "name": {
+      "en": "English Elementary 1",
+      "fr": "Anglais débutant 1",
+      "zh": "初级英语 1"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 7,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0113",
+    "code": "E12B",
+    "name": {
+      "en": "English Elementary 2",
+      "fr": "Anglais débutant 2",
+      "zh": "初级英语 2"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 7,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0114",
+    "code": "E13B",
+    "name": {
+      "en": "English Elementary 3",
+      "fr": "Anglais débutant 3",
+      "zh": "初级英语 3"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 7,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0115",
+    "code": "E21B",
+    "name": {
+      "en": "English Intermediate 1",
+      "fr": "Anglais intermédiaire 1",
+      "zh": "中级英语 1"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 9,
+    "ageMax": null,
+    "level": {
+      "zh": "中级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0116",
+    "code": "Z01",
+    "name": {
+      "en": "Children's Painting 1",
+      "fr": "Peinture pour enfants 1",
+      "zh": "儿童绘画启蒙 1"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "想象 / 模仿"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0117",
+    "code": "Z02",
+    "name": {
+      "en": "Children's Painting 2",
+      "fr": "Peinture pour enfants 2",
+      "zh": "儿童绘画启蒙 2"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "想象 / 模仿"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0118",
+    "code": "Z11",
+    "name": {
+      "en": "Basic Sketch",
+      "fr": "Dessin, base",
+      "zh": "初级素描"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "素描训练"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0119",
+    "code": "Z50B",
+    "name": {
+      "en": "Basic Cartoon",
+      "fr": "Bande dessinée, base",
+      "zh": "卡通漫画基础"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "13:00–14:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "卡通基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0120",
+    "code": "Q53",
+    "name": {
+      "en": "Guitar Intermediate",
+      "fr": "Guitare intermédiaire",
+      "zh": "中级吉他"
+    },
+    "category": "music",
+    "day": "sat",
+    "time": "13:00–14:00",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "中级吉他"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0121",
+    "code": "Q13",
+    "name": {
+      "en": "Chess 1",
+      "fr": "Échecs 1",
+      "zh": "国际象棋 1"
+    },
+    "category": "chess",
+    "day": "sat",
+    "time": "13:00–14:00",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "国际象棋"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0122",
+    "code": "Q14",
+    "name": {
+      "en": "Chess 2",
+      "fr": "Échecs 2",
+      "zh": "国际象棋 2"
+    },
+    "category": "chess",
+    "day": "sat",
+    "time": "14:00–15:00",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "国际象棋"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0123",
+    "code": "Q23",
+    "name": {
+      "en": "Ping-pong (parents & kids)",
+      "fr": "Ping-pong parents-enfants",
+      "zh": "乒乓亲子班"
+    },
+    "category": "pingpong",
+    "day": "sat",
+    "time": "13:00–14:00",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "乒乓练习"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0124",
+    "code": "W42",
+    "name": {
+      "en": "Children's Dance",
+      "fr": "Danse pour enfants",
+      "zh": "少儿舞蹈"
+    },
+    "category": "dance",
+    "day": "sat",
+    "time": "13:00–14:00",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "少儿舞蹈"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0125",
+    "code": "W52",
+    "name": {
+      "en": "Gongfu for kids",
+      "fr": "Kung-fu pour enfants",
+      "zh": "少儿武术"
+    },
+    "category": "martial",
+    "day": "sat",
+    "time": "13:00–14:00",
+    "ageMin": 6,
+    "ageMax": 10,
+    "level": {
+      "zh": "武术基本功"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0126",
+    "code": "W82",
+    "name": {
+      "en": "Mulan Fitness",
+      "fr": "Mulan quan (santé)",
+      "zh": "木兰拳"
+    },
+    "category": "fitness",
+    "day": "sat",
+    "time": "12:40–13:40",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "木兰拳"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0127",
+    "code": "W89",
+    "name": {
+      "en": "Fitness Dance",
+      "fr": "Danse santé",
+      "zh": "成人舞蹈"
+    },
+    "category": "dance",
+    "day": "sat",
+    "time": "13:00–14:30",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "健身舞"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0128",
+    "code": "W90",
+    "name": {
+      "en": "Baduanjin Qigong",
+      "fr": "Qigong Baduanjin",
+      "zh": "养生气功八段锦"
+    },
+    "category": "fitness",
+    "day": "sat",
+    "time": "14:00–15:00",
+    "ageMin": 18,
+    "ageMax": null,
+    "level": {
+      "zh": "八段锦"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0129",
+    "code": "Y01C",
+    "name": {
+      "en": "Chinese Elementary 1",
+      "fr": "Chinois primaire 1",
+      "zh": "小学语文 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "中文一册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0130",
+    "code": "Y09C",
+    "name": {
+      "en": "Chinese Elementary 9",
+      "fr": "Chinois primaire 9",
+      "zh": "小学语文 9"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "中文九/十册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0131",
+    "code": "Y11C",
+    "name": {
+      "en": "Chinese Elementary 11",
+      "fr": "Chinois primaire 11",
+      "zh": "小学语文 11"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "中文十一/十二册"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0132",
+    "code": "Y21C",
+    "name": {
+      "en": "Chinese High School 1",
+      "fr": "Chinois secondaire 1",
+      "zh": "中学语文 1"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "中学语文"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0133",
+    "code": "YG2",
+    "name": {
+      "en": "Engaging Chinese literacy program",
+      "fr": "Lecture du chinois en s'amusant",
+      "zh": "趣味中文认读"
+    },
+    "category": "chinese",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "自编"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0134",
+    "code": "S02C",
+    "name": {
+      "en": "Math Elementary, Grade 2",
+      "fr": "Mathématiques primaire, Grade 2",
+      "zh": "数学 2年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学二年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0135",
+    "code": "S03C",
+    "name": {
+      "en": "Math Elementary, Grade 3",
+      "fr": "Mathématiques primaire, Grade 3",
+      "zh": "数学 3年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "数学三年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0136",
+    "code": "S04C",
+    "name": {
+      "en": "Math Elementary, Grade 4",
+      "fr": "Mathématiques primaire, Grade 4",
+      "zh": "数学 4年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "数学四年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0137",
+    "code": "S05C",
+    "name": {
+      "en": "Math Elementary, Grade 5",
+      "fr": "Mathématiques primaire, Grade 5",
+      "zh": "数学 5年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "数学五年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0138",
+    "code": "S06C",
+    "name": {
+      "en": "Math Elementary, Grade 6",
+      "fr": "Mathématiques primaire, Grade 6",
+      "zh": "数学 6年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "数学六年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0139",
+    "code": "S21C",
+    "name": {
+      "en": "Math High School, Grade 7",
+      "fr": "Mathématiques secondaire, Grade 7",
+      "zh": "数学 7年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 12,
+    "ageMax": null,
+    "level": {
+      "zh": "数学七年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0140",
+    "code": "S31C",
+    "name": {
+      "en": "Math High School, Grade 10",
+      "fr": "Mathématiques secondaire, Grade 10",
+      "zh": "数学 10年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 14,
+    "ageMax": null,
+    "level": {
+      "zh": "数学十年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0141",
+    "code": "S32C",
+    "name": {
+      "en": "Math High School, Grade 11",
+      "fr": "Mathématiques secondaire, Grade 11",
+      "zh": "数学 11年级"
+    },
+    "category": "math",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 14,
+    "ageMax": null,
+    "level": {
+      "zh": "数学十一年级"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0142",
+    "code": "E12C",
+    "name": {
+      "en": "English Elementary 2",
+      "fr": "Anglais débutant 2",
+      "zh": "初级英语 2"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0143",
+    "code": "E13C",
+    "name": {
+      "en": "English Elementary 3",
+      "fr": "Anglais débutant 3",
+      "zh": "初级英语 3"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0144",
+    "code": "E21C",
+    "name": {
+      "en": "English Intermediate 1",
+      "fr": "Anglais intermédiaire 1",
+      "zh": "中级英语 1"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "初 / 中级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0145",
+    "code": "E22C",
+    "name": {
+      "en": "English Intermediate 2",
+      "fr": "Anglais intermédiaire 2",
+      "zh": "中级英语 2"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "初 / 中级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0146",
+    "code": "E23C",
+    "name": {
+      "en": "English Intermediate 3",
+      "fr": "Anglais intermédiaire 3",
+      "zh": "中级英语 3"
+    },
+    "category": "english",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 10,
+    "ageMax": null,
+    "level": {
+      "zh": "初 / 中级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0147",
+    "code": "F11C",
+    "name": {
+      "en": "French Elementary 1",
+      "fr": "Français débutant 1",
+      "zh": "初级法语 1"
+    },
+    "category": "french",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "初级听说读写"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0148",
+    "code": "Z03",
+    "name": {
+      "en": "Children's Painting",
+      "fr": "Peinture pour enfants",
+      "zh": "儿童绘画启蒙"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 6,
+    "ageMax": null,
+    "level": {
+      "zh": "入门 / 想象"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0149",
+    "code": "Z22",
+    "name": {
+      "en": "Basic Sketch",
+      "fr": "Dessin, base",
+      "zh": "初级素描"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "素描训练"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0150",
+    "code": "Z33",
+    "name": {
+      "en": "Basic Gouache",
+      "fr": "Gouache, base",
+      "zh": "水粉"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "水粉基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0151",
+    "code": "Z50C",
+    "name": {
+      "en": "Basic Cartoon",
+      "fr": "Bande dessinée, base",
+      "zh": "卡通漫画基础"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "卡通基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  },
+  {
+    "id": "k0152",
+    "code": "Z60C",
+    "name": {
+      "en": "Chinese Calligraphy & Painting",
+      "fr": "Calligraphie et peinture chinoises",
+      "zh": "中国书画"
+    },
+    "category": "art",
+    "day": "sat",
+    "time": "15:00–16:50",
+    "ageMin": 8,
+    "ageMax": null,
+    "level": {
+      "zh": "书法 / 国画基础"
+    },
+    "teacher": null,
+    "room": null,
+    "fee": null,
+    "description": null
+  }
+]
