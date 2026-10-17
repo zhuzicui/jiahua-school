@@ -19,7 +19,6 @@ export default async function ArtPage({ params }: PageProps<"/[locale]/student-w
     return (
         <PageSection>
             <PageHeader locale={locale} eyebrow={t.nav.studentWork} title={t.nav.art} intro={t.work.artIntro} />
-            <p className="mt-4 text-sm text-quaternary">{t.work.privacy}</p>
             <div className="mt-10">
                 {works.length === 0 ? (
                     <SimpleEmptyState icon={<Image01 className="size-6" />} title={t.work.emptyArt} />

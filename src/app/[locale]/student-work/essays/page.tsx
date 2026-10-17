@@ -20,7 +20,6 @@ export default async function EssaysPage({ params }: PageProps<"/[locale]/studen
     return (
         <PageSection>
             <PageHeader locale={locale} eyebrow={t.nav.studentWork} title={t.nav.essays} intro={t.work.essaysIntro} />
-            <p className="mt-4 text-sm text-quaternary">{t.work.privacy}</p>
             <div className="mt-10 flex max-w-3xl flex-col gap-10">
                 {essays.length === 0 && <SimpleEmptyState icon={<File06 className="size-6" />} title={t.common.comingSoon} />}
                 {years.map((year) => (

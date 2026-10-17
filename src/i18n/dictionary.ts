@@ -104,7 +104,6 @@ const zh = {
         emptyArt: "美术作品正在整理中，即将上线。",
         emptyMagazine: "校刊正在整理中，即将上线。",
         schoolYear: (y: string) => `${y} 学年`,
-        privacy: "为保护学生隐私，作者姓名只显示名字和姓氏首字母。",
     },
     news: {
         title: "佳华新闻",
@@ -249,7 +248,6 @@ const fr: Dictionary = {
         emptyArt: "Les œuvres sont en cours de préparation et seront bientôt en ligne.",
         emptyMagazine: "Les numéros sont en cours de préparation et seront bientôt en ligne.",
         schoolYear: (y: string) => `Année ${y}`,
-        privacy: "Pour protéger la vie privée des élèves, seuls le prénom et l'initiale du nom sont affichés.",
     },
     news: {
         title: "Nouvelles",
@@ -398,7 +396,6 @@ const en: Dictionary = {
         emptyArt: "Art works are being prepared and will be online soon.",
         emptyMagazine: "Magazine issues are being prepared and will be online soon.",
         schoolYear: (y: string) => `${y} school year`,
-        privacy: "To protect students' privacy, only first names and last initials are shown.",
     },
     news: {
         title: "News",

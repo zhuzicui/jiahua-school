@@ -91,7 +91,7 @@ export type NewsPost = {
 export type Essay = {
     id: string;
     title: LocalizedText;
-    /** Already reduced to first name + last initial unless consent is recorded */
+    /** Shown exactly as entered */
     student: string;
     class: string | null;
     schoolYear: string;

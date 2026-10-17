@@ -31,7 +31,7 @@ Node 22 or newer.
 
 - **Languages**: Chinese is the source language. Every text field is `{ zh, fr?, en? }`.
   A missing translation shows the Chinese text with a small "中文" tag or notice, never an empty block.
-- **Students' names**: first name + last initial only, until consent is recorded on the registration form.
+- **Students' names**: shown exactly as staff enter them.
 - **Calendar**: `src/content/calendar.json` holds the terms and dated events (holidays, first/last days, exams).
   The weekly timetable is the "by day" view of Courses, not part of the calendar.
 - **Promoted news**: a News post with `"promote": true` shows on the home page until `promoteUntil`, and always stays in the News list.
