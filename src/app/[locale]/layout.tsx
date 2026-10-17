@@ -57,8 +57,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
                             logo={<JiahuaLogo className="h-full" />}
                             homeHref={href(locale)}
                             sections={getNavigation(locale)}
-                            registerHref={href(locale, "/registration")}
-                            labels={{ register: t.common.register, menu: t.nav.menu, language: t.nav.language }}
+                            labels={{ menu: t.nav.menu, language: t.nav.language }}
                         />
                         <main id="main" className="min-h-[60vh]">
                             {children}

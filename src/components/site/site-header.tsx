@@ -4,7 +4,6 @@ import { type ReactNode, useRef, useState } from "react";
 import { ChevronDown } from "@untitledui/icons";
 import { usePathname } from "next/navigation";
 import { Button as AriaButton, Dialog as AriaDialog, DialogTrigger as AriaDialogTrigger, Popover as AriaPopover } from "react-aria-components";
-import { Button } from "@/components/base/buttons/button";
 import type { Locale } from "@/i18n/config";
 import type { NavSection } from "@/lib/navigation";
 import { cx } from "@/utils/cx";
@@ -15,8 +14,7 @@ type Props = {
     logo: ReactNode;
     homeHref: string;
     sections: NavSection[];
-    registerHref: string;
-    labels: { register: string; menu: string; language: string };
+    labels: { menu: string; language: string };
 };
 
 const isActive = (pathname: string, section: NavSection) =>
@@ -31,7 +29,7 @@ const MobileSection = ({ section, pathname }: { section: NavSection; pathname: s
                 <a
                     href={section.href}
                     aria-current={pathname.startsWith(section.href) ? "page" : undefined}
-                    className="flex items-center px-4 py-3 text-md font-semibold text-primary hover:bg-primary_hover aria-[current=page]:text-brand-secondary"
+                    className="flex items-center px-4 py-3 text-md font-semibold text-primary hover:bg-utility-slate-100 aria-[current=page]:bg-utility-slate-200 aria-[current=page]:text-primary"
                 >
                     {section.label}
                 </a>
@@ -45,7 +43,7 @@ const MobileSection = ({ section, pathname }: { section: NavSection; pathname: s
                 type="button"
                 aria-expanded={isOpen}
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex w-full items-center justify-between px-4 py-3 text-md font-semibold text-primary hover:bg-primary_hover"
+                className="flex w-full items-center justify-between px-4 py-3 text-md font-semibold text-primary hover:bg-utility-slate-100"
             >
                 {section.label}
                 <ChevronDown
@@ -60,7 +58,7 @@ const MobileSection = ({ section, pathname }: { section: NavSection; pathname: s
                             <a
                                 href={item.href}
                                 aria-current={pathname === item.href ? "page" : undefined}
-                                className="block py-2.5 pr-4 pl-8 text-md font-medium text-secondary hover:bg-primary_hover aria-[current=page]:font-semibold aria-[current=page]:text-brand-secondary"
+                                className="block py-2.5 pr-4 pl-8 text-md font-medium text-secondary hover:bg-utility-slate-100 aria-[current=page]:bg-utility-slate-200 aria-[current=page]:font-semibold aria-[current=page]:text-primary"
                             >
                                 {item.label}
                             </a>
@@ -72,21 +70,23 @@ const MobileSection = ({ section, pathname }: { section: NavSection; pathname: s
     );
 };
 
-export const SiteHeader = ({ locale, logo, homeHref, sections, registerHref, labels }: Props) => {
+export const SiteHeader = ({ locale, logo, homeHref, sections, labels }: Props) => {
+    // Latin labels are longer than Chinese ones, so French and English use 14px to keep the menu on one line.
+    const navText = locale === "zh" ? "text-md" : "text-sm";
     const headerRef = useRef<HTMLElement>(null);
     const pathname = usePathname() ?? "";
 
     return (
         <header ref={headerRef} className="sticky top-0 z-30 border-b border-secondary bg-primary/95 backdrop-blur supports-[backdrop-filter]:bg-primary/85">
-            <div className="mx-auto flex h-16 max-w-container items-center gap-4 px-4 md:h-18 md:px-8">
+            <div className="mx-auto flex h-16 max-w-container items-center gap-4 px-4 md:h-18 md:px-8 lg:grid lg:grid-cols-[1fr_auto_1fr]">
                 <a
                     href={homeHref}
-                    className="flex h-9 shrink-0 items-center rounded-md outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-4 md:h-11"
+                    className="flex h-9 shrink-0 items-center justify-self-start rounded-md outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-4 md:h-11"
                 >
                     {logo}
                 </a>
 
-                <nav aria-label={labels.menu} className="ml-4 hidden lg:block">
+                <nav aria-label={labels.menu} className="hidden lg:block">
                     <ul className="flex items-center gap-0.5">
                         {sections.map((section) => (
                             <li key={section.id}>
@@ -94,8 +94,9 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, registerHref, lab
                                     <AriaDialogTrigger>
                                         <AriaButton
                                             className={cx(
-                                                "flex cursor-pointer items-center gap-1 rounded-lg px-3 py-2 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-primary_hover hover:text-secondary_hover focus-visible:outline-2 focus-visible:outline-offset-2",
-                                                isActive(pathname, section) && "bg-secondary text-primary",
+                                                "flex cursor-pointer items-center gap-1 rounded-lg px-2.5 py-2 font-semibold whitespace-nowrap xl:px-3 text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 aria-expanded:bg-utility-slate-100",
+                                                navText,
+                                                isActive(pathname, section) && "bg-utility-slate-200 text-primary hover:bg-utility-slate-200",
                                             )}
                                         >
                                             {section.label}
@@ -122,7 +123,7 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, registerHref, lab
                                                             <a
                                                                 href={item.href}
                                                                 aria-current={pathname === item.href ? "page" : undefined}
-                                                                className="block rounded-md px-3 py-2.5 text-sm font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-primary_hover hover:text-secondary_hover focus-visible:outline-2 aria-[current=page]:bg-secondary aria-[current=page]:text-primary"
+                                                                className="block rounded-md px-3 py-2.5 text-sm font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 aria-[current=page]:bg-utility-slate-200 aria-[current=page]:text-primary"
                                                             >
                                                                 {item.label}
                                                             </a>
@@ -136,7 +137,10 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, registerHref, lab
                                     <a
                                         href={section.href}
                                         aria-current={isActive(pathname, section) ? "page" : undefined}
-                                        className="flex rounded-lg px-3 py-2 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-primary_hover hover:text-secondary_hover focus-visible:outline-2 focus-visible:outline-offset-2 aria-[current=page]:bg-secondary aria-[current=page]:text-primary"
+                                        className={cx(
+                                            "flex rounded-lg px-2.5 py-2 font-semibold whitespace-nowrap xl:px-3 text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 aria-[current=page]:bg-utility-slate-200 aria-[current=page]:text-primary",
+                                            navText,
+                                        )}
                                     >
                                         {section.label}
                                     </a>
@@ -146,11 +150,8 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, registerHref, lab
                     </ul>
                 </nav>
 
-                <div className="ml-auto flex items-center gap-2 md:gap-3">
+                <div className="ml-auto flex items-center gap-2 justify-self-end md:gap-3">
                     <LanguageSwitcher locale={locale} label={labels.language} />
-                    <Button href={registerHref} size="md" className="max-sm:hidden">
-                        {labels.register}
-                    </Button>
 
                     <AriaDialogTrigger>
                         <AriaButton
@@ -188,11 +189,6 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, registerHref, lab
                                             <MobileSection key={section.id} section={section} pathname={pathname} />
                                         ))}
                                     </ul>
-                                    <div className="border-t border-secondary p-4">
-                                        <Button href={registerHref} size="lg" className="w-full">
-                                            {labels.register}
-                                        </Button>
-                                    </div>
                                 </nav>
                             </AriaDialog>
                         </AriaPopover>
