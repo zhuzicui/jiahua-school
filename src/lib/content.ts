@@ -55,17 +55,17 @@ export const getPromotedNews = (today: string) => getNews().filter((post) => pos
 
 /** Illustration file per course type (public/illustrations). */
 export const courseIllustration: Record<CourseTypeId, string> = {
-    chinese: "/illustrations/jiahua-chinese.svg",
-    math: "/illustrations/jiahua-math.svg",
-    english: "/illustrations/jiahua-english.svg",
-    french: "/illustrations/jiahua-french.svg",
+    chinese: "/illustrations/hand-chinese.png",
+    math: "/illustrations/hand-math.png",
+    english: "/illustrations/hand-english.png",
+    french: "/illustrations/hand-french.png",
     art: "/illustrations/jiahua-art.svg",
-    music: "/illustrations/jiahua-music.svg",
+    music: "/illustrations/hand-music.png",
     dance: "/illustrations/jiahua-dance.svg",
     robotics: "/illustrations/jiahua-robotics.svg",
     chess: "/illustrations/jiahua-go-chess.svg",
-    martial: "/illustrations/jiahua-martial-arts-taiji.svg",
-    pingpong: "/illustrations/jiahua-ping-pong.svg",
+    martial: "/illustrations/hand-taichi.png",
+    pingpong: "/illustrations/hand-ping-pong.png",
     fitness: "/illustrations/jiahua-fitness.svg",
 };
 
