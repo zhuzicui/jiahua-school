@@ -1,56 +1,91 @@
-# Untitled UI starter kit for Next.js
+# 蒙特利尔佳华学校 · Jia Hua School of Montreal
 
-This is an official Untitled UI starter kit for Next.js. Kickstart your Untitled UI project with Next.js in seconds.
+The website of Jia Hua School of Montreal, a Chinese school founded in 1994. The site is in Chinese, French and English, and it is designed for parents on their phones first.
 
-## Untitled UI React
+![Home page](docs/home-desktop.png)
 
-[Untitled UI React](https://www.untitledui.com/react) is the world’s largest collection of open-source React UI components. Everything you need to design and develop modern, beautiful interfaces—fast.
+<p align="center"><img src="docs/courses-mobile.png" alt="Course finder on a phone" width="300"></p>
 
-Built with React 19.3, Tailwind CSS v4.3, TypeScript 6.0, and React Aria, Untitled UI React components deliver modern performance, type safety, and maintainability.
+## What's on the site
 
-[Learn more](https://www.untitledui.com/react) • [Documentation](https://www.untitledui.com/react/docs/introduction) • [Figma](https://www.untitledui.com/figma) • [FAQs](https://www.untitledui.com/faqs)
+| Page | What parents find there |
+| --- | --- |
+| Home | The next class day, important notices, course categories and the latest news |
+| About | The school's history, the committee, teachers by subject, and teachers' insights |
+| Courses | All 111 courses, filtered by the child's age, category or day, with a by-day timetable |
+| Calendar | Class days, holidays and exams for the school year |
+| Registration, FAQ, Contact | How to register, answers to common questions, the address and how to get there |
+| Student Work | Essays, the art gallery and the school magazine |
+| News | School announcements |
 
-## Getting started
+Every page exists in three languages at `/zh`, `/fr` and `/en`. Chinese is the default and the source language. When a French or English translation is missing, the Chinese text shows with a small "中文" tag, so nothing is ever blank.
 
-First, run the development server:
+## Built with
+
+- [Next.js 16](https://nextjs.org) (App Router) and React 19
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [Untitled UI React](https://www.untitledui.com/react) components on [React Aria](https://react-spectrum.adobe.com/react-aria/), with the Jia Hua red (#E84A5F) in place of the default purple
+- Light and dark mode
+
+## Run it on your computer
+
+You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```bash
+git clone https://github.com/zhuzicui/jiahua-school.git
+cd jiahua-school
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. It goes to the Chinese site; switch languages from the header.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Starts the site locally and reloads on every change |
+| `npm run build` | Builds the production site. GitHub runs this on every pull request. |
+| `npm run start` | Serves the production build |
 
-## Resources
+## Where things live
 
-Untitled UI React is built on top of [Untitled UI Figma](https://www.untitledui.com/figma), the world's largest and most popular Figma UI kit and design system. Explore more:
+| Path | What it holds |
+| --- | --- |
+| `src/content/*.json` | All site content: courses, teachers, calendar, FAQ, news, essays and page text |
+| `src/app/[locale]/` | One folder per page |
+| `src/i18n/dictionary.ts` | Menu, button and label text in 中文, FR and EN |
+| `src/components/site/` | Jia Hua components such as the header, footer, course finder and teacher directory |
+| `src/components/base`, `application`, `foundations` | Untitled UI components. Use these before writing new ones. |
+| `src/styles/theme.css` | Colours and fonts |
+| `public/` | Logo, favicon and course illustrations |
 
-**[Untitled UI Figma:](https://www.untitledui.com/react/resources/figma-files)** The world's largest Figma UI kit and design system.
-<br/>
-**[Untitled UI Icons:](https://www.untitledui.com/react/resources/icons)** A clean, consistent, and neutral icon library crafted specifically for modern UI design.
-<br/>
-**[Untitled UI file icons:](https://www.untitledui.com/react/resources/file-icons)** Free file format icons, designed specifically for modern web and UI design.
-<br/>
-**[Untitled UI flag icons:](https://www.untitledui.com/react/resources/flag-icons)** Free country flag icons, designed specifically for modern web and UI design.
-<br/>
-**[Untitled UI avatars:](https://www.untitledui.com/react/resources/avatars)** Free placeholder user avatars and profile pictures to use in your projects.
-<br/>
-**[Untitled UI logos:](https://www.untitledui.com/react/resources/logos)** Free fictional company logos to use in your projects.
+Pages read content only through `src/lib/content.ts`, so the content can later move to a database without changing the pages.
 
-## License
+## Editing content
 
-Untitled UI React open-source components are licensed under the MIT license, which means you can use them for free in unlimited commercial projects.
+Each text field holds all three languages:
 
-> [!NOTE]
-> This license applies only to the starter kit and to the components included in this open-source repository. [Untitled UI React PRO](https://www.untitledui.com/react) includes hundreds more advanced UI components and page examples and is subject to a separate [license agreement](https://www.untitledui.com/license).
+```json
+{ "zh": "常见问题", "fr": "Questions fréquentes", "en": "FAQ" }
+```
 
-[Untitled UI license agreement →](https://www.untitledui.com/license)
+- Leave out `fr` or `en` when there is no translation yet. The Chinese text is shown instead.
+- Students' names appear exactly as they are entered.
+- To show a news post on the home page, set `"promote": true` and a `"promoteUntil"` date. It always stays in the News list.
+- Course fees, teachers and rooms are blank for now and can be added to `src/content/courses.json` later.
 
-[Frequently asked questions →](https://www.untitledui.com/faqs)
+## Making changes
+
+1. Create a branch and edit the files.
+2. Run `npm run build` and make sure it passes.
+3. Open a pull request. GitHub checks the types and the build automatically.
+4. Merge it into `main` once the checks pass.
+
+The site is planned for [Vercel](https://vercel.com). Once the repository is connected there, every pull request gets a preview link and every merge to `main` goes live.
+
+## Coming next
+
+- Staff sign-in at `/admin`
+- Editing page text and tables (courses, teachers, calendar) in the browser, with Excel import
+- Bulk upload for art and essays
+- A Translate button that drafts French and English for staff to review
+- Content moved from JSON files into Supabase

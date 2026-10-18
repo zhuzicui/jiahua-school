@@ -1,0 +1,132 @@
+{
+  "siteName": {
+    "en": "Jiahua School of Montreal",
+    "fr": "École Jia Hua de Montréal",
+    "zh": "蒙特利尔佳华学校"
+  },
+  "tagline": {
+    "en": "Founded 1994 · Taught in Mandarin · Saturday classes at Dawson College",
+    "fr": "Fondée en 1994 · Enseignement en mandarin · Cours le samedi au Collège Dawson",
+    "zh": "1994年创建 · 普通话教学 · 每周六在道森学院上课"
+  },
+  "schoolYear": "2026–2027",
+  "contact": {
+    "address": "4001 de Maisonneuve O., Montréal (QC) H3Z 3G4",
+    "email": "info@jiahuaschool.ca",
+    "metro": {
+      "en": "Atwater metro (green line)",
+      "fr": "Métro Atwater (ligne verte)",
+      "zh": "地铁绿线 Atwater 站"
+    },
+    "phones": [
+      "514-568-8550",
+      "514-928-7135"
+    ],
+    "place": "Dawson College",
+    "room": {
+      "en": "Registration office: 4th floor, room 4E1",
+      "fr": "Bureau d'inscription : 4e étage, salle 4E1",
+      "zh": "注册处：4楼 4E1 教室"
+    },
+    "wechat": "jiahuaxuexiao"
+  },
+  "registrationUrl": "https://registration.jiahuaschool.ca/",
+  "courseTypes": [
+    {
+      "id": "chinese",
+      "label": {
+        "en": "Chinese",
+        "fr": "Chinois",
+        "zh": "中文"
+      }
+    },
+    {
+      "id": "math",
+      "label": {
+        "en": "Math",
+        "fr": "Mathématiques",
+        "zh": "数学"
+      }
+    },
+    {
+      "id": "english",
+      "label": {
+        "en": "English",
+        "fr": "Anglais",
+        "zh": "英语"
+      }
+    },
+    {
+      "id": "french",
+      "label": {
+        "en": "French",
+        "fr": "Français",
+        "zh": "法语"
+      }
+    },
+    {
+      "id": "art",
+      "label": {
+        "en": "Art",
+        "fr": "Arts plastiques",
+        "zh": "美术"
+      }
+    },
+    {
+      "id": "music",
+      "label": {
+        "en": "Music",
+        "fr": "Musique",
+        "zh": "音乐"
+      }
+    },
+    {
+      "id": "dance",
+      "label": {
+        "en": "Dance",
+        "fr": "Danse",
+        "zh": "舞蹈"
+      }
+    },
+    {
+      "id": "robotics",
+      "label": {
+        "en": "Robotics",
+        "fr": "Robotique",
+        "zh": "机器人"
+      }
+    },
+    {
+      "id": "chess",
+      "label": {
+        "en": "Go & chess",
+        "fr": "Go et échecs",
+        "zh": "围棋 · 国际象棋"
+      }
+    },
+    {
+      "id": "martial",
+      "label": {
+        "en": "Martial arts & taiji",
+        "fr": "Arts martiaux et taï-chi",
+        "zh": "武术 · 太极"
+      }
+    },
+    {
+      "id": "pingpong",
+      "label": {
+        "en": "Ping-pong",
+        "fr": "Ping-pong",
+        "zh": "乒乓球"
+      }
+    },
+    {
+      "id": "fitness",
+      "label": {
+        "en": "Fitness",
+        "fr": "Mise en forme",
+        "zh": "健身"
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "b0025",
+    "name": "荣萌",
+    "nameLatin": "Rong Meng",
+    "photo": null,
+    "bio": {
+      "zh": "毕业于中国华东师范大学中文系，来加拿大后在McGill大学攻读教育管理学，并获硕士学位。不仅在中国积累了一定的教学经验，也在McGill University和Dawson College从事对外汉语教学工作多年。"
+    },
+    "title": {
+      "en": "Principal",
+      "fr": "Direction",
+      "zh": "校长"
+    }
+  },
+  {
+    "id": "b0026",
+    "name": "沈榕",
+    "nameLatin": "Shen Rong",
+    "photo": null,
+    "bio": {
+      "zh": "上海大学中文系毕业，来加拿大前一直担任公司行政职务，善于做青年工作。在佳华20余年，担任各级语文教师和教学组长，有丰富的教学经验及组织能力。被中国侨办授予“海外优秀华文教师”，并荣获“海外教育贡献奖”。"
+    },
+    "title": {
+      "en": "Vice-principal & Dean of studies",
+      "fr": "Direction adjointe et études",
+      "zh": "副校长（兼教务长）"
+    }
+  },
+  {
+    "id": "b0027",
+    "name": "赵青",
+    "nameLatin": "Zhao Qing",
+    "photo": null,
+    "bio": {
+      "zh": "在北京邮电大学获学士学位，来加后获 Université de Montréal 管理学学位，并在当地科技公司工作多年，有丰富的管理工作经验。"
+    },
+    "title": {
+      "en": "Treasurer",
+      "fr": "Trésorerie",
+      "zh": "财务长"
+    }
+  },
+  {
+    "id": "b0028",
+    "name": "何晓任",
+    "nameLatin": "He Xiaoren",
+    "photo": null,
+    "bio": {
+      "zh": "原中国棋院职业围棋五段，曾为中国国家少年围棋队教练，是中国第一批被授予围棋段位的10名优秀选手之一。佳华创建以来在佳华担任围棋课主教，被中国侨办授予“海外优秀华文教师”。"
+    },
+    "title": {
+      "en": "General affairs",
+      "fr": "Services généraux",
+      "zh": "总务长"
+    }
+  },
+  {
+    "id": "b0029",
+    "name": "李元",
+    "nameLatin": "Li Yuan",
+    "photo": null,
+    "bio": {
+      "zh": "毕业于北京首都医科大学，并获北京协和医科大学硕士学位，在首都儿科研究所工作多年。来加拿大后，担任 Université de Montréal 药理及生理系实验室主管，有较丰富的管理经验。"
+    },
+    "title": {
+      "en": "Academic assistant",
+      "fr": "Assistance pédagogique",
+      "zh": "教务助理"
+    }
+  },
+  {
+    "id": "b0030",
+    "name": "荣茁",
+    "nameLatin": "Rong Zhuo",
+    "photo": null,
+    "bio": {
+      "zh": "毕业于中国东华大学，担任中国教育报科技版记者和编辑多年，来加拿大后进入Concordia University计算机专业深造。在佳华不仅担任语文教师，还是校刊《百花园》总编，中国侨办授予“海外优秀华文教师”。"
+    },
+    "title": {
+      "en": "Editor, school magazine",
+      "fr": "Rédaction du journal scolaire",
+      "zh": "校刊总编"
+    }
+  },
+  {
+    "id": "b0031",
+    "name": "林珺",
+    "nameLatin": "Lin Jun",
+    "photo": null,
+    "bio": {
+      "zh": "Concordia University 计算机专业毕业，本地高科技公司担任工程师。在佳华学校负责有关网络教学方面的技术支持和管理。"
+    },
+    "title": {
+      "en": "IT manager",
+      "fr": "Gestion informatique",
+      "zh": "网络总管"
+    }
+  }
+]

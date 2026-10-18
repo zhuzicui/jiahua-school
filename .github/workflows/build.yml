@@ -15,11 +15,13 @@ jobs:
             - uses: actions/setup-node@v4
               with:
                   node-version: "22"
+                  cache: npm
 
-            # No lockfile, like a fresh `npx untitledui init`: the build must pass with
-            # the latest versions package.json allows.
             - name: Install dependencies
-              run: npm install --no-package-lock
+              run: npm ci
+
+            - name: Type-check
+              run: npx next typegen && npx tsc --noEmit
 
             - name: Build
               run: npm run build
