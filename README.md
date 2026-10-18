@@ -1,54 +1,91 @@
-# Jia Hua School website
+# 蒙特利尔佳华学校 · Jia Hua School of Montreal
 
-Public website for 蒙特利尔佳华学校 / Jia Hua School of Montreal, built from the
-"Jia Hua School website redesign" PRD. Next.js (App Router) + Tailwind CSS +
-[Untitled UI React](https://www.untitledui.com/react) components, deployed on Vercel.
+The website of Jia Hua School of Montreal, a Chinese school founded in 1994. The site is in Chinese, French and English, and it is designed for parents on their phones first.
 
-## Run it
+![Home page](docs/home-desktop.png)
+
+<p align="center"><img src="docs/courses-mobile.png" alt="Course finder on a phone" width="300"></p>
+
+## What's on the site
+
+| Page | What parents find there |
+| --- | --- |
+| Home | The next class day, important notices, course categories and the latest news |
+| About | The school's history, the committee, teachers by subject, and teachers' insights |
+| Courses | All 111 courses, filtered by the child's age, category or day, with a by-day timetable |
+| Calendar | Class days, holidays and exams for the school year |
+| Registration, FAQ, Contact | How to register, answers to common questions, the address and how to get there |
+| Student Work | Essays, the art gallery and the school magazine |
+| News | School announcements |
+
+Every page exists in three languages at `/zh`, `/fr` and `/en`. Chinese is the default and the source language. When a French or English translation is missing, the Chinese text shows with a small "中文" tag, so nothing is ever blank.
+
+## Built with
+
+- [Next.js 16](https://nextjs.org) (App Router) and React 19
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [Untitled UI React](https://www.untitledui.com/react) components on [React Aria](https://react-spectrum.adobe.com/react-aria/), with the Jia Hua red (#E84A5F) in place of the default purple
+- Light and dark mode
+
+## Run it on your computer
+
+You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```bash
-npm ci
-npm run dev        # http://localhost:3000 (redirects to /zh)
-npm run build      # production build; CI runs this on every pull request
+git clone https://github.com/zhuzicui/jiahua-school.git
+cd jiahua-school
+npm install
+npm run dev
 ```
 
-Node 22 or newer.
+Open http://localhost:3000. It goes to the Chinese site; switch languages from the header.
 
-## How it is organised
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Starts the site locally and reloads on every change |
+| `npm run build` | Builds the production site. GitHub runs this on every pull request. |
+| `npm run start` | Serves the production build |
+
+## Where things live
 
 | Path | What it holds |
 | --- | --- |
-| `src/app/[locale]/…` | One folder per page. Every page exists at `/zh`, `/fr` and `/en`. |
-| `src/content/*.json` | Site content (courses, teachers, calendar, FAQ, news…). Seeded from the CMS prototype in Oct 2026. |
-| `src/lib/content.ts` | The only place pages read content from. The CMS milestone replaces these functions with database reads. |
-| `src/i18n/dictionary.ts` | Interface text (menus, buttons, labels) in 中文 / FR / EN. |
-| `src/components/site/` | Jia Hua components (header, footer, course finder, teacher directory…). |
-| `src/components/base`, `application`, `foundations` | Untitled UI components from the starter kit. Prefer these over new ones. |
-| `src/styles/theme.css` | Untitled UI tokens with the Jia Hua red scale (#E84A5F) in place of purple. |
-| `public/illustrations/` | The 12 course illustrations. |
+| `src/content/*.json` | All site content: courses, teachers, calendar, FAQ, news, essays and page text |
+| `src/app/[locale]/` | One folder per page |
+| `src/i18n/dictionary.ts` | Menu, button and label text in 中文, FR and EN |
+| `src/components/site/` | Jia Hua components such as the header, footer, course finder and teacher directory |
+| `src/components/base`, `application`, `foundations` | Untitled UI components. Use these before writing new ones. |
+| `src/styles/theme.css` | Colours and fonts |
+| `public/` | Logo, favicon and course illustrations |
 
-## Content rules
+Pages read content only through `src/lib/content.ts`, so the content can later move to a database without changing the pages.
 
-- **Languages**: Chinese is the source language. Every text field is `{ zh, fr?, en? }`.
-  A missing translation shows the Chinese text with a small "中文" tag or notice, never an empty block.
-- **Students' names**: shown exactly as staff enter them.
-- **Calendar**: `src/content/calendar.json` holds the terms and dated events (holidays, first/last days, exams).
-  The weekly timetable is the "by day" view of Courses, not part of the calendar.
-- **Promoted news**: a News post with `"promote": true` shows on the home page until `promoteUntil`, and always stays in the News list.
-- **Hidden for now**: Summer Camps and Contest Results (PRD rec. 11 and 12).
+## Editing content
 
-## Changing things
+Each text field holds all three languages:
 
-Code changes are made with Claude Code on a branch, opened as a pull request, and deploy
-automatically on merge once the repository is connected to Vercel.
+```json
+{ "zh": "常见问题", "fr": "Questions fréquentes", "en": "FAQ" }
+```
 
-1. Edit the JSON in `src/content/` for content, or the page in `src/app/[locale]/` for layout.
-2. `npm run build` must pass.
-3. Open a pull request; Vercel posts a preview link on it.
+- Leave out `fr` or `en` when there is no translation yet. The Chinese text is shown instead.
+- Students' names appear exactly as they are entered.
+- To show a news post on the home page, set `"promote": true` and a `"promoteUntil"` date. It always stays in the News list.
+- Course fees, teachers and rooms are blank for now and can be added to `src/content/courses.json` later.
 
-## Next milestone
+## Making changes
 
-Staff sign-in at `/admin` (emailed one-time link or Google, editor list kept by Admins),
-inline editing for page text, a table editor with Excel import for courses/teachers/calendar,
-bulk upload for art and essays, and a Translate button (Claude API) that drafts French and
-English for review. Content moves from `src/content/` into Supabase (Postgres + Storage).
+1. Create a branch and edit the files.
+2. Run `npm run build` and make sure it passes.
+3. Open a pull request. GitHub checks the types and the build automatically.
+4. Merge it into `main` once the checks pass.
+
+The site is planned for [Vercel](https://vercel.com). Once the repository is connected there, every pull request gets a preview link and every merge to `main` goes live.
+
+## Coming next
+
+- Staff sign-in at `/admin`
+- Editing page text and tables (courses, teachers, calendar) in the browser, with Excel import
+- Bulk upload for art and essays
+- A Translate button that drafts French and English for staff to review
+- Content moved from JSON files into Supabase
