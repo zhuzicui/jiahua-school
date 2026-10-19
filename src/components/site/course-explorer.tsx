@@ -221,7 +221,7 @@ export const CourseExplorer = ({
                                         className="course-tile block w-14 rounded-lg p-1"
                                     >
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={courseIllustration[type.id]} alt="" width={160} height={120} className="aspect-[4/3] h-auto w-full object-contain" />
+                                        <img src={courseIllustration[type.id]} alt="" width={160} height={160} className="aspect-square h-auto w-full object-contain" />
                                     </span>
                                     <h2 id={`cat-${type.id}`} className="text-xl font-semibold text-primary">
                                         {label(type.id)}

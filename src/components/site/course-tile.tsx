@@ -9,10 +9,10 @@ export const CourseIllustration = ({ type, className, tilt }: { type: CourseType
     <span
         aria-hidden="true"
         style={{ "--tile": courseTint[type] } as React.CSSProperties}
-        className={cx("course-tile block rounded-xl px-3 py-2 ring-1 ring-[#02204f]/15", tilt, className)}
+        className={cx("course-tile flex aspect-square items-center justify-center rounded-xl p-3 ring-1 ring-[#02204f]/15", tilt, className)}
     >
-        {/* eslint-disable-next-line @next/next/no-img-element -- static SVG line art, no resizing needed */}
-        <img src={courseIllustration[type]} alt="" width={160} height={120} className="mx-auto aspect-[4/3] h-auto w-full max-w-40 object-contain" />
+        {/* eslint-disable-next-line @next/next/no-img-element -- static line art, no resizing needed */}
+        <img src={courseIllustration[type]} alt="" width={160} height={160} className="aspect-square size-full object-contain" />
     </span>
 );
 

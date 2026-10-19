@@ -59,14 +59,14 @@ export const courseIllustration: Record<CourseTypeId, string> = {
     math: "/illustrations/hand-math.png",
     english: "/illustrations/hand-english.png",
     french: "/illustrations/hand-french.png",
-    art: "/illustrations/jiahua-art.svg",
+    art: "/illustrations/hand-art.png",
     music: "/illustrations/hand-music.png",
-    dance: "/illustrations/jiahua-dance.svg",
-    robotics: "/illustrations/jiahua-robotics.svg",
-    chess: "/illustrations/jiahua-go-chess.svg",
+    dance: "/illustrations/hand-dance.png",
+    robotics: "/illustrations/hand-robotics.png",
+    chess: "/illustrations/hand-chess.png",
     martial: "/illustrations/hand-taichi.png",
-    pingpong: "/illustrations/hand-ping-pong.png",
-    fitness: "/illustrations/jiahua-fitness.svg",
+    pingpong: "/illustrations/hand-pingpong.png",
+    fitness: "/illustrations/hand-fitness.png",
 };
 
 /** Tile background per course type, from the illustration palette. */
