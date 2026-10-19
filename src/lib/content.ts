@@ -55,18 +55,18 @@ export const getPromotedNews = (today: string) => getNews().filter((post) => pos
 
 /** Illustration file per course type (public/illustrations). */
 export const courseIllustration: Record<CourseTypeId, string> = {
-    chinese: "/illustrations/jiahua-chinese.svg",
-    math: "/illustrations/jiahua-math.svg",
-    english: "/illustrations/jiahua-english.svg",
-    french: "/illustrations/jiahua-french.svg",
-    art: "/illustrations/jiahua-art.svg",
-    music: "/illustrations/jiahua-music.svg",
-    dance: "/illustrations/jiahua-dance.svg",
-    robotics: "/illustrations/jiahua-robotics.svg",
-    chess: "/illustrations/jiahua-go-chess.svg",
-    martial: "/illustrations/jiahua-martial-arts-taiji.svg",
-    pingpong: "/illustrations/jiahua-ping-pong.svg",
-    fitness: "/illustrations/jiahua-fitness.svg",
+    chinese: "/illustrations/hand-chinese.png",
+    math: "/illustrations/hand-math.png",
+    english: "/illustrations/hand-english.png",
+    french: "/illustrations/hand-french.png",
+    art: "/illustrations/hand-art.png",
+    music: "/illustrations/hand-music.png",
+    dance: "/illustrations/hand-dance.png",
+    robotics: "/illustrations/hand-robotics.png",
+    chess: "/illustrations/hand-chess.png",
+    martial: "/illustrations/hand-taichi.png",
+    pingpong: "/illustrations/hand-pingpong.png",
+    fitness: "/illustrations/hand-fitness.png",
 };
 
 /** Tile background per course type, from the illustration palette. */
