@@ -10,7 +10,7 @@ The website of Jia Hua School of Montreal, a Chinese school founded in 1994. The
 
 | Page | What parents find there |
 | --- | --- |
-| Home | The next class day, important notices, course categories and the latest news |
+| Home | An introduction to the school and the course categories |
 | About | The school's history, the committee, teachers by subject, and teachers' insights |
 | Courses | All 111 courses, filtered by the child's age, category or day, with a by-day timetable |
 | Calendar | Class days, holidays and exams for the school year |
@@ -56,7 +56,7 @@ Open http://localhost:3000. It goes to the Chinese site; switch languages from t
 | `src/components/site/` | Jia Hua components such as the header, footer, course finder and teacher directory |
 | `src/components/base`, `application`, `foundations` | Untitled UI components. Use these before writing new ones. |
 | `src/styles/theme.css` | Colours and fonts |
-| `public/` | Logo, favicon and course illustrations |
+| `public/` | Logo, favicon and the hand-drawn course illustrations |
 
 Pages read content only through `src/lib/content.ts`, so the content can later move to a database without changing the pages.
 
