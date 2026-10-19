@@ -5,7 +5,6 @@ import { getSettings } from "@/lib/content";
 import { href } from "@/lib/navigation";
 import { tx } from "@/lib/text";
 import { JiahuaLogo } from "../brand/jiahua-logo";
-import { T } from "./localized";
 
 export const SiteFooter = ({ locale }: { locale: Locale }) => {
     const t = getDictionary(locale);
@@ -23,7 +22,6 @@ export const SiteFooter = ({ locale }: { locale: Locale }) => {
             <div className="mx-auto grid max-w-container gap-10 px-4 py-12 md:grid-cols-[1.4fr_1fr_1fr] md:px-8 md:py-16">
                 <div className="flex flex-col gap-5">
                     <JiahuaLogo className="h-11 w-fit" />
-                    <T as="p" value={getSettings().tagline} locale={locale} className="max-w-sm text-md text-tertiary" />
                 </div>
 
                 <div>
@@ -43,10 +41,14 @@ export const SiteFooter = ({ locale }: { locale: Locale }) => {
                                 {contact.email}
                             </a>
                         </li>
-                        <li className="flex gap-2">
-                            <Phone aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-fg-quaternary" />
-                            <span className="tabular-nums">{contact.phones.join(" · ")}</span>
-                        </li>
+                        {contact.phones.map((phone) => (
+                            <li key={phone} className="flex gap-2">
+                                <Phone aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-fg-quaternary" />
+                                <a href={`tel:+1${phone.replaceAll("-", "")}`} className="link tabular-nums">
+                                    {phone}
+                                </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
@@ -75,13 +77,8 @@ export const SiteFooter = ({ locale }: { locale: Locale }) => {
                         {contact.email}
                     </a>
                 </p>
-                <p className="flex gap-4">
-                    <span>
-                        © {new Date().getFullYear()} {tx(siteName, locale)}
-                    </span>
-                    <a href="/admin" className="font-medium text-quaternary underline-offset-2 hover:underline">
-                        {t.footer.staff}
-                    </a>
+                <p>
+                    © {new Date().getFullYear()} {tx(siteName, locale)}
                 </p>
             </div>
         </footer>
