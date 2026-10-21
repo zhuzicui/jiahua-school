@@ -116,15 +116,19 @@ img[src*="/illustrations/hand-"] {
 }
 .course-tile-gradient {
     --tile-fade: 35%;
+    border: 1px solid transparent;
+    background-origin: border-box;
     background-image: linear-gradient(to right, var(--tile, #eef1f6), color-mix(in srgb, var(--tile, #eef1f6) var(--tile-fade), white));
     transition:
         --tile-fade 200ms ease-out,
+        border-color 200ms ease-out,
         translate 150ms ease-in-out,
         box-shadow 150ms ease-in-out;
 }
 .course-tile-gradient:hover,
 .course-tile-gradient:focus-visible {
     --tile-fade: 100%;
+    border-color: color-mix(in srgb, var(--tile, #eef1f6) 82%, black);
 }
 .dark-mode .course-tile-gradient,
 .dark-mode .course-tile {
