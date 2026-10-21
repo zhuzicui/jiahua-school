@@ -2,9 +2,13 @@
 
 The website of Jia Hua School of Montreal, a Chinese school founded in 1994. The site is in Chinese, French and English, and it is designed for parents on their phones first.
 
-![Home page](docs/home-desktop.png)
+![Home page on a desktop, in English](docs/home-desktop.png)
 
-<p align="center"><img src="docs/courses-mobile.png" alt="Course finder on a phone" width="300"></p>
+<p align="center">
+  <img src="docs/home-mobile.png" alt="Home page on a phone, in English" width="260">
+  &nbsp;&nbsp;
+  <img src="docs/courses-mobile.png" alt="Course finder on a phone" width="260">
+</p>
 
 ## What's on the site
 
