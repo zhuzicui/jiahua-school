@@ -31,21 +31,21 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                             as="p"
                                             value={settings.tagline}
                                             locale={locale}
-                                            className="mb-4 text-sm font-semibold text-brand-secondary md:text-md"
+                                            className="mb-3 text-xs font-semibold text-brand-secondary md:text-sm"
                                         />
                                     )}
                                     <T
                                         as={index === 0 ? "h1" : "h2"}
                                         value={slide.title ?? settings.siteName}
                                         locale={locale}
-                                        className="text-display-md font-semibold text-primary lg:text-display-lg xl:text-display-xl"
+                                        className="text-display-sm font-semibold text-primary lg:text-display-md"
                                     />
-                                    <T as="p" value={slide.intro ?? home.intro} locale={locale} className="mt-5 max-w-xl text-lg text-tertiary md:text-xl" />
-                                    <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                                        <Button href={href(locale, "/courses")} size="xl" iconTrailing={<ArrowRight data-icon="trailing" />}>
+                                    <T as="p" value={slide.intro ?? home.intro} locale={locale} className="mt-4 max-w-xl text-md text-tertiary md:text-lg" />
+                                    <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                                        <Button href={href(locale, "/courses")} size="md" iconTrailing={<ArrowRight data-icon="trailing" />}>
                                             {t.home.findCourse}
                                         </Button>
-                                        <Button href={href(locale, "/registration")} size="xl" color="secondary">
+                                        <Button href={href(locale, "/registration")} size="md" color="secondary">
                                             {t.common.register}
                                         </Button>
                                     </div>
