@@ -56,7 +56,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 <div className="rounded-3xl bg-secondary px-4 py-10 md:px-10 md:py-14">
                     <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">{t.home.categories}</h2>
                     <p className="mt-3 max-w-2xl text-lg text-tertiary">{t.home.categoriesIntro}</p>
-                    <ul className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-4">
+                    <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                         {getCourseTypes().map((type) => (
                             <li key={type.id}>
                                 <CourseTile
