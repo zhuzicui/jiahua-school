@@ -41,14 +41,6 @@
       }
     },
     {
-      "id": "math",
-      "label": {
-        "en": "Math",
-        "fr": "Mathématiques",
-        "zh": "数学"
-      }
-    },
-    {
       "id": "english",
       "label": {
         "en": "English",
@@ -62,6 +54,14 @@
         "en": "French",
         "fr": "Français",
         "zh": "法语"
+      }
+    },
+    {
+      "id": "math",
+      "label": {
+        "en": "Math",
+        "fr": "Mathématiques",
+        "zh": "数学"
       }
     },
     {
