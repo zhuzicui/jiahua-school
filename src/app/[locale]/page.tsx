@@ -20,11 +20,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <>
             {/* Hero: up to three slides, text on the left and a photo on the right */}
             <section className="relative overflow-x-clip bg-secondary">
-                <div className="mx-auto max-w-container px-4 pt-8 pb-12 md:px-8 lg:pt-10 lg:pb-4">
+                <div className="mx-auto max-w-container px-4 pt-8 pb-8 md:px-8 lg:pt-6 lg:pb-0">
                     <HeroCarousel
                         slideLabel={t.home.slide}
                         slides={settings.heroSlides.slice(0, 3).map((slide, index) => (
-                            <div key={slide.image} className="grid items-center gap-8 lg:h-[540px] lg:grid-cols-[1fr_1fr] lg:gap-12">
+                            <div key={slide.image} className="grid items-center gap-8 lg:h-[400px] lg:grid-cols-[1fr_1fr] lg:gap-12">
                                 <div>
                                     {index === 0 && (
                                         <T
@@ -38,7 +38,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                         as={index === 0 ? "h1" : "h2"}
                                         value={slide.title ?? settings.siteName}
                                         locale={locale}
-                                        className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl"
+                                        className="text-display-md font-semibold text-primary md:text-display-lg xl:text-display-xl"
                                     />
                                     <T as="p" value={slide.intro ?? home.intro} locale={locale} className="mt-5 max-w-xl text-lg text-tertiary md:text-xl" />
                                     <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -50,7 +50,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="relative mx-auto aspect-square w-full max-w-md lg:mr-0 lg:max-w-[480px]">
+                                <div className="relative mx-auto aspect-square w-full max-w-md lg:mr-0 lg:max-w-[400px]">
                                     <span
                                         aria-hidden="true"
                                         style={{ "--morph": "12s", "--drift": "9s", "--delay": "-3s" } as React.CSSProperties}
@@ -81,15 +81,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                     />
                 </div>
                 {/* Curvy line between the hero and the course categories */}
-                <svg aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" className="block h-12 w-full fill-[var(--color-bg-primary)] md:h-20">
-                    <path d="M0 64 C 240 8, 480 8, 720 56 S 1200 120, 1440 40 V120 H0 Z" />
-                    <path
-                        d="M0 64 C 240 8, 480 8, 720 56 S 1200 120, 1440 40"
-                        fill="none"
-                        vectorEffect="non-scaling-stroke"
-                        className="stroke-[var(--color-border-secondary)]"
-                        strokeWidth={1.5}
-                    />
+                <svg aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" className="block h-12 w-full fill-[var(--color-bg-primary)] md:h-16">
+                    <path d="M0 72 C 120 8, 300 8, 420 60 S 700 116, 840 64 S 1100 4, 1240 48 S 1400 96, 1440 80 V120 H0 Z" />
                 </svg>
             </section>
 
