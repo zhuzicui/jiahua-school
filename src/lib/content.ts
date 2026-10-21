@@ -71,16 +71,16 @@ export const courseIllustration: Record<CourseTypeId, string> = {
 
 /** Tile background per course type, from the illustration palette. */
 export const courseTint: Record<CourseTypeId, string> = {
-    chinese: "#ffe9e4",
-    math: "#e3ebf8",
-    english: "#fff2d6",
-    french: "#e2f4ee",
-    art: "#ece9fb",
-    music: "#ffe6d9",
-    dance: "#fde8ec",
-    robotics: "#e3ebf8",
-    chess: "#eef1f6",
-    martial: "#fff2d6",
-    pingpong: "#e2f4ee",
-    fitness: "#ffe9e4",
+    chinese: "#ffdfdb",
+    english: "#f7e8ca",
+    french: "#cef3e8",
+    math: "#dceaff",
+    art: "#ebe5ff",
+    music: "#ffe3d0",
+    dance: "#fbe0f7",
+    robotics: "#caf2f7",
+    chess: "#d9f2d9",
+    martial: "#ece7de",
+    pingpong: "#e8edce",
+    fitness: "#d0efff",
 };
