@@ -40,6 +40,7 @@ const zh = {
     },
     home: {
         findCourse: "查找课程",
+        slide: "幻灯片",
         nextClass: "下次上课",
         noClassComing: "本学年课程已结束，新学年注册请留意通知。",
         promoted: "重要通知",
@@ -184,6 +185,7 @@ const fr: Dictionary = {
     },
     home: {
         findCourse: "Trouver un cours",
+        slide: "Diapositive",
         nextClass: "Prochain cours",
         noClassComing: "L'année scolaire est terminée. Surveillez les avis pour l'inscription à la nouvelle année.",
         promoted: "Avis importants",
@@ -326,6 +328,7 @@ const en: Dictionary = {
     },
     home: {
         findCourse: "Find a course",
+        slide: "Slide",
         nextClass: "Next class day",
         noClassComing: "The school year has ended. Watch for notices about registration for the new year.",
         promoted: "Notices",

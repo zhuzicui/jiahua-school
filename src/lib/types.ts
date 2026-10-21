@@ -127,4 +127,8 @@ export type SiteSettings = {
         wechat: string;
     };
     courseTypes: CourseType[];
+    /** Home page hero, at most three slides. The first slide uses the site name and home intro when it has no title or text of its own. */
+    heroSlides: HeroSlide[];
 };
+
+export type HeroSlide = { image: string; alt: LocalizedText; title?: LocalizedText; intro?: LocalizedText };
