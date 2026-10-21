@@ -125,6 +125,10 @@ img[src*="/illustrations/hand-"] {
 .course-tile-gradient:hover,
 .course-tile-gradient:focus-visible {
     --tile-fade: 100%;
+    --sketch-opacity: 0.8;
+}
+.course-tile-gradient img {
+    transition: opacity 200ms ease-out;
 }
 .dark-mode .course-tile-gradient,
 .dark-mode .course-tile {

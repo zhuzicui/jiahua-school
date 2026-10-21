@@ -24,7 +24,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                     <HeroCarousel
                         slideLabel={t.home.slide}
                         slides={settings.heroSlides.slice(0, 3).map((slide, index) => (
-                            <div key={slide.image} className="grid items-center gap-8 md:h-[400px] md:grid-cols-[2fr_1fr] md:gap-8 lg:gap-12">
+                            <div key={slide.image} className="grid items-center gap-2 md:h-[400px] md:grid-cols-[2fr_1fr] md:gap-8 lg:gap-12">
                                 <div>
                                     {index === 0 && (
                                         <T
@@ -42,15 +42,25 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                     />
                                     <T as="p" value={slide.intro ?? home.intro} locale={locale} className="mt-4 max-w-xl text-md text-tertiary md:text-lg" />
                                     <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                                        <Button href={href(locale, "/courses")} size="md" iconTrailing={<ArrowRight data-icon="trailing" />}>
+                                        <Button
+                                            href={href(locale, "/courses")}
+                                            size="xl"
+                                            className="md:gap-1 md:px-3.5 md:py-2.5 md:text-sm"
+                                            iconTrailing={<ArrowRight data-icon="trailing" />}
+                                        >
                                             {t.home.findCourse}
                                         </Button>
-                                        <Button href={href(locale, "/registration")} size="md" color="secondary">
+                                        <Button
+                                            href={href(locale, "/registration")}
+                                            size="xl"
+                                            color="secondary"
+                                            className="md:gap-1 md:px-3.5 md:py-2.5 md:text-sm"
+                                        >
                                             {t.common.register}
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="relative mx-auto my-8 aspect-square w-4/5 max-w-sm md:my-0 md:mr-[12%] md:w-[85%] md:max-w-[340px]">
+                                <div className="relative mx-auto mb-8 aspect-square w-4/5 max-w-sm md:mr-[12%] md:mb-0 md:w-[85%] md:max-w-[340px]">
                                     <div aria-hidden="true" style={{ "--orbit": "38s" } as React.CSSProperties} className="hero-orbit absolute inset-0">
                                         <span
                                             style={{ "--morph": "6s", "--drift": "8.5s", "--delay": "-2s" } as React.CSSProperties}
