@@ -97,7 +97,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 <div className="mx-auto max-w-container px-4 pt-4 pb-16 md:px-8 md:pb-24">
                     <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">{t.home.categories}</h2>
                     <p className="mt-3 max-w-2xl text-lg text-tertiary">{t.home.categoriesIntro}</p>
-                    <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+                    <ul className="mt-8 grid grid-cols-1 gap-3 min-[500px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                         {getCourseTypes().map((type) => (
                             <li key={type.id}>
                                 <CourseTile

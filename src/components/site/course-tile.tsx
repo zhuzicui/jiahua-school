@@ -18,10 +18,10 @@ export const CourseIllustration = ({ type, className, tilt }: { type: CourseType
 export const CourseTile = ({ type, href, count, locale }: { type: CourseType; href: string; count: string; locale: Locale }) => (
     <a
         href={href}
-        className="group flex h-full flex-col gap-3 rounded-xl bg-primary p-3 shadow-xs ring-1 ring-secondary outline-focus-ring transition duration-150 ease-in-out ring-inset hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
+        className="group flex h-full items-center gap-4 rounded-xl bg-primary p-3 shadow-xs ring-1 ring-secondary outline-focus-ring transition duration-150 ease-in-out ring-inset hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 min-[500px]:flex-col min-[500px]:items-stretch min-[500px]:gap-3"
     >
-        <CourseIllustration type={type.id} />
-        <span className="block px-1 pb-1">
+        <CourseIllustration type={type.id} className="w-20 shrink-0 p-2 min-[500px]:w-auto min-[500px]:p-3" />
+        <span className="block min-w-0 px-1 min-[500px]:pb-1">
             <T value={type.label} locale={locale} className="block text-md font-semibold text-primary" />
             <span className="text-sm text-tertiary">{count}</span>
         </span>
