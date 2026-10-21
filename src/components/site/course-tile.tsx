@@ -8,7 +8,7 @@ export const CourseIllustration = ({ type, className, tilt }: { type: CourseType
     <span
         aria-hidden="true"
         style={{ "--tile": courseTint[type] } as React.CSSProperties}
-        className={cx("course-tile flex aspect-square items-center justify-center rounded-xl p-3 ring-1 ring-[#02204f]/15", tilt, className)}
+        className={cx("course-tile flex aspect-square items-center justify-center rounded-xl p-3", tilt, className)}
     >
         {/* eslint-disable-next-line @next/next/no-img-element -- static line art, no resizing needed */}
         <img src={courseIllustration[type]} alt="" width={160} height={160} className="aspect-square size-full object-contain" />
@@ -18,10 +18,11 @@ export const CourseIllustration = ({ type, className, tilt }: { type: CourseType
 export const CourseTile = ({ type, href, count, locale }: { type: CourseType; href: string; count: string; locale: Locale }) => (
     <a
         href={href}
-        className="group flex h-full flex-col gap-3 rounded-xl bg-primary p-3 shadow-xs ring-1 ring-secondary outline-focus-ring transition duration-150 ease-in-out ring-inset hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
+        style={{ "--tile": courseTint[type.id] } as React.CSSProperties}
+        className="course-tile group flex h-full items-center gap-4 rounded-xl p-3 outline-focus-ring transition duration-150 ease-in-out hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 min-[500px]:flex-col min-[500px]:items-start min-[500px]:gap-2"
     >
-        <CourseIllustration type={type.id} />
-        <span className="block px-1 pb-1">
+        <CourseIllustration type={type.id} className="w-20 shrink-0 p-1 min-[500px]:w-[100px] min-[500px]:self-center" />
+        <span className="block min-w-0 px-1 min-[500px]:pb-1">
             <T value={type.label} locale={locale} className="block text-md font-semibold text-primary" />
             <span className="text-sm text-tertiary">{count}</span>
         </span>
