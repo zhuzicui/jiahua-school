@@ -1,18 +1,13 @@
 import { ArrowRight } from "@untitledui/icons";
 import { Button } from "@/components/base/buttons/button";
-import { CourseIllustration, CourseTile } from "@/components/site/course-tile";
+import { CourseTile } from "@/components/site/course-tile";
+import { HeroCarousel } from "@/components/site/hero-carousel";
 import { T } from "@/components/site/localized";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionary";
 import { getCourseTypes, getCourses, getPage, getSettings } from "@/lib/content";
 import { href } from "@/lib/navigation";
-
-const heroTiles = [
-    { type: "chinese", tilt: "-rotate-3" },
-    { type: "math", tilt: "rotate-2 translate-y-4" },
-    { type: "art", tilt: "rotate-1" },
-    { type: "music", tilt: "-rotate-2 translate-y-4" },
-] as const;
+import { pick } from "@/lib/text";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
     const locale = (await params).locale as Locale;
@@ -23,32 +18,44 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
     return (
         <>
-            {/* Hero */}
-            <section className="mx-auto grid max-w-container items-center gap-12 overflow-x-clip px-4 pt-12 pb-16 md:px-8 md:pt-20 md:pb-24 lg:grid-cols-[1.15fr_1fr]">
-                <div>
-                    <T as="p" value={settings.tagline} locale={locale} className="mb-4 text-sm font-semibold text-brand-secondary md:text-md" />
-                    <T
-                        as="h1"
-                        value={settings.siteName}
-                        locale={locale}
-                        className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl"
-                    />
-                    <T as="p" value={home.intro} locale={locale} className="mt-5 max-w-xl text-lg text-tertiary md:text-xl" />
-                    <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                        <Button href={href(locale, "/courses")} size="xl" iconTrailing={<ArrowRight data-icon="trailing" />}>
-                            {t.home.findCourse}
-                        </Button>
-                        <Button href={href(locale, "/registration")} size="xl" color="secondary">
-                            {t.common.register}
-                        </Button>
-                    </div>
-                </div>
-                <div className="relative mx-auto grid w-full max-w-md grid-cols-2 gap-4 pb-6 lg:mr-0">
-                    <span aria-hidden="true" className="absolute -right-6 -bottom-4 size-44 rounded-full bg-[#a9bfe6]/70" />
-                    {heroTiles.map(({ type, tilt }) => (
-                        <CourseIllustration key={type} type={type} tilt={tilt} className="relative p-4 ring-[1.5px] ring-[#02204f]" />
+            {/* Hero: up to three slides, text on the left and a photo on the right */}
+            <section className="mx-auto max-w-container overflow-x-clip px-4 pt-8 pb-16 md:px-8 md:pb-24 lg:pt-10">
+                <HeroCarousel
+                    slideLabel={t.home.slide}
+                    slides={settings.heroSlides.slice(0, 3).map((slide, index) => (
+                        <div key={slide.image} className="grid items-center gap-8 lg:h-[520px] lg:grid-cols-[1fr_1.1fr] lg:gap-12">
+                            <div>
+                                {index === 0 && (
+                                    <T as="p" value={settings.tagline} locale={locale} className="mb-4 text-sm font-semibold text-brand-secondary md:text-md" />
+                                )}
+                                <T
+                                    as={index === 0 ? "h1" : "h2"}
+                                    value={slide.title ?? settings.siteName}
+                                    locale={locale}
+                                    className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl"
+                                />
+                                <T as="p" value={slide.intro ?? home.intro} locale={locale} className="mt-5 max-w-xl text-lg text-tertiary md:text-xl" />
+                                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                                    <Button href={href(locale, "/courses")} size="xl" iconTrailing={<ArrowRight data-icon="trailing" />}>
+                                        {t.home.findCourse}
+                                    </Button>
+                                    <Button href={href(locale, "/registration")} size="xl" color="secondary">
+                                        {t.common.register}
+                                    </Button>
+                                </div>
+                            </div>
+                            {/* eslint-disable-next-line @next/next/no-img-element -- one fixed-size photo, already compressed */}
+                            <img
+                                src={slide.image}
+                                alt={pick(slide.alt, locale).text}
+                                width={1600}
+                                height={1068}
+                                fetchPriority={index === 0 ? "high" : undefined}
+                                className="aspect-[4/3] w-full rounded-2xl object-cover lg:aspect-auto lg:h-full"
+                            />
+                        </div>
                     ))}
-                </div>
+                />
             </section>
 
             {/* Course categories */}
