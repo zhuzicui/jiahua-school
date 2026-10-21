@@ -5,11 +5,7 @@ import { cx } from "@/utils/cx";
 import { T } from "./localized";
 
 export const CourseIllustration = ({ type, className, tilt }: { type: CourseType["id"]; className?: string; tilt?: string }) => (
-    <span
-        aria-hidden="true"
-        style={{ "--tile": courseTint[type] } as React.CSSProperties}
-        className={cx("course-tile flex aspect-square items-center justify-center rounded-xl p-3", tilt, className)}
-    >
+    <span aria-hidden="true" className={cx("flex aspect-square items-center justify-center p-3", tilt, className)}>
         {/* eslint-disable-next-line @next/next/no-img-element -- static line art, no resizing needed */}
         <img src={courseIllustration[type]} alt="" width={160} height={160} className="aspect-square size-full object-contain" />
     </span>
@@ -19,9 +15,9 @@ export const CourseTile = ({ type, href, count, locale }: { type: CourseType; hr
     <a
         href={href}
         style={{ "--tile": courseTint[type.id] } as React.CSSProperties}
-        className="course-tile group flex h-full items-center gap-4 rounded-xl p-3 outline-focus-ring transition duration-150 ease-in-out hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 min-[500px]:flex-col min-[500px]:items-start min-[500px]:gap-2"
+        className="course-tile-gradient group flex h-full items-center gap-4 rounded-xl p-3 outline-focus-ring hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 min-[500px]:flex-col min-[500px]:items-start min-[500px]:gap-2"
     >
-        <CourseIllustration type={type.id} className="w-20 shrink-0 p-1 min-[500px]:w-[100px] min-[500px]:self-center" />
+        <CourseIllustration type={type.id} className="w-20 shrink-0 p-1 min-[500px]:w-[100px]" />
         <span className="block min-w-0 px-1 min-[500px]:pb-1">
             <T value={type.label} locale={locale} className="block text-md font-semibold text-primary" />
             <span className="text-sm text-tertiary">{count}</span>
