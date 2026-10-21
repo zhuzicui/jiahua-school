@@ -19,7 +19,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     return (
         <>
             {/* Hero: up to three slides, text on the left and a photo on the right */}
-            <section className="relative overflow-x-clip">
+            <section className="relative overflow-x-clip bg-secondary">
                 <div className="mx-auto max-w-container px-4 pt-8 pb-12 md:px-8 lg:pt-10 lg:pb-4">
                     <HeroCarousel
                         slideLabel={t.home.slide}
@@ -62,7 +62,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                         className="hero-blob absolute bottom-3 left-3 size-2/5 bg-brand-secondary"
                                     />
                                     <div
-                                        style={{ "--morph": "18s", "--drift": "15s" } as React.CSSProperties}
+                                        style={{ "--morph": "18s", "--drift": "15s", "--delay": "-5s" } as React.CSSProperties}
                                         className="hero-blob absolute inset-[8%] overflow-hidden"
                                     >
                                         {/* eslint-disable-next-line @next/next/no-img-element -- one fixed-size photo, already compressed */}
@@ -81,12 +81,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                     />
                 </div>
                 {/* Curvy line between the hero and the course categories */}
-                <svg
-                    aria-hidden="true"
-                    viewBox="0 0 1440 120"
-                    preserveAspectRatio="none"
-                    className="block h-12 w-full fill-[var(--color-bg-secondary)] md:h-20"
-                >
+                <svg aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" className="block h-12 w-full fill-[var(--color-bg-primary)] md:h-20">
                     <path d="M0 64 C 240 8, 480 8, 720 56 S 1200 120, 1440 40 V120 H0 Z" />
                     <path
                         d="M0 64 C 240 8, 480 8, 720 56 S 1200 120, 1440 40"
@@ -99,8 +94,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </section>
 
             {/* Course categories */}
-            <section className="-mt-px bg-secondary">
-                <div className="mx-auto max-w-container px-4 pt-6 pb-16 md:px-8 md:pb-24">
+            <section className="-mt-px bg-primary">
+                <div className="mx-auto max-w-container px-4 pt-4 pb-16 md:px-8 md:pb-24">
                     <h2 className="text-display-xs font-semibold text-primary md:text-display-sm">{t.home.categories}</h2>
                     <p className="mt-3 max-w-2xl text-lg text-tertiary">{t.home.categoriesIntro}</p>
                     <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
