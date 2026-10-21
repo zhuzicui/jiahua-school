@@ -78,7 +78,7 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, labels }: Props) 
 
     return (
         <header ref={headerRef} className="sticky top-0 z-30 border-b border-secondary bg-primary/95 backdrop-blur supports-[backdrop-filter]:bg-primary/85">
-            <div className="mx-auto flex h-16 max-w-container items-center gap-4 px-4 md:h-18 md:px-8 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+            <div className="mx-auto flex h-16 max-w-container items-center gap-4 px-4 md:h-18 md:px-8">
                 <a
                     href={homeHref}
                     className="flex h-9 shrink-0 items-center justify-self-start rounded-md outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-4 md:h-11"
@@ -86,7 +86,7 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, labels }: Props) 
                     {logo}
                 </a>
 
-                <nav aria-label={labels.menu} className="hidden lg:block">
+                <nav aria-label={labels.menu} className="ml-auto hidden lg:block">
                     <ul className="flex items-center gap-0.5">
                         {sections.map((section) => (
                             <li key={section.id}>
@@ -94,7 +94,7 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, labels }: Props) 
                                     <AriaDialogTrigger>
                                         <AriaButton
                                             className={cx(
-                                                "flex cursor-pointer items-center gap-1 rounded-lg px-2.5 py-2 font-semibold whitespace-nowrap xl:px-3 text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 aria-expanded:bg-utility-slate-100",
+                                                "flex cursor-pointer items-center gap-1 rounded-lg px-2.5 py-2 font-semibold whitespace-nowrap text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 aria-expanded:bg-utility-slate-100 xl:px-3",
                                                 navText,
                                                 isActive(pathname, section) && "bg-utility-slate-200 text-primary hover:bg-utility-slate-200",
                                             )}
@@ -138,7 +138,7 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, labels }: Props) 
                                         href={section.href}
                                         aria-current={isActive(pathname, section) ? "page" : undefined}
                                         className={cx(
-                                            "flex rounded-lg px-2.5 py-2 font-semibold whitespace-nowrap xl:px-3 text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 aria-[current=page]:bg-utility-slate-200 aria-[current=page]:text-primary",
+                                            "flex rounded-lg px-2.5 py-2 font-semibold whitespace-nowrap text-secondary outline-focus-ring transition duration-100 ease-linear hover:bg-utility-slate-100 hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 aria-[current=page]:bg-utility-slate-200 aria-[current=page]:text-primary xl:px-3",
                                             navText,
                                         )}
                                     >
@@ -150,7 +150,7 @@ export const SiteHeader = ({ locale, logo, homeHref, sections, labels }: Props) 
                     </ul>
                 </nav>
 
-                <div className="ml-auto flex items-center gap-2 justify-self-end md:gap-3">
+                <div className="ml-auto flex items-center gap-2 md:gap-3 lg:ml-0">
                     <LanguageSwitcher locale={locale} label={labels.language} />
 
                     <AriaDialogTrigger>
