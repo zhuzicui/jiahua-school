@@ -20,11 +20,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <>
             {/* Hero: up to three slides, text on the left and a photo on the right */}
             <section className="relative overflow-x-clip bg-secondary">
-                <div className="mx-auto max-w-container px-4 pt-8 pb-8 md:px-8 lg:pt-6 lg:pb-0">
+                <div className="mx-auto max-w-container px-4 pt-8 pb-8 md:px-8 md:pt-6 md:pb-0">
                     <HeroCarousel
                         slideLabel={t.home.slide}
                         slides={settings.heroSlides.slice(0, 3).map((slide, index) => (
-                            <div key={slide.image} className="grid items-center gap-8 lg:h-[400px] lg:grid-cols-[1fr_1fr] lg:gap-12">
+                            <div key={slide.image} className="grid items-center gap-8 md:h-[400px] md:grid-cols-[2fr_1fr] md:gap-8 lg:gap-12">
                                 <div>
                                     {index === 0 && (
                                         <T
@@ -38,7 +38,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                         as={index === 0 ? "h1" : "h2"}
                                         value={slide.title ?? settings.siteName}
                                         locale={locale}
-                                        className="text-display-md font-semibold text-primary md:text-display-lg xl:text-display-xl"
+                                        className="text-display-md font-semibold text-primary lg:text-display-lg xl:text-display-xl"
                                     />
                                     <T as="p" value={slide.intro ?? home.intro} locale={locale} className="mt-5 max-w-xl text-lg text-tertiary md:text-xl" />
                                     <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -50,20 +50,26 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="relative mx-auto aspect-square w-full max-w-md lg:mr-0 lg:max-w-[400px]">
-                                    <span
-                                        aria-hidden="true"
-                                        style={{ "--morph": "12s", "--drift": "9s", "--delay": "-3s" } as React.CSSProperties}
-                                        className="hero-blob absolute top-3 right-3 size-1/3 bg-utility-blue-100"
-                                    />
-                                    <span
-                                        aria-hidden="true"
-                                        style={{ "--morph": "16s", "--drift": "13s", "--delay": "-7s" } as React.CSSProperties}
-                                        className="hero-blob absolute bottom-3 left-3 size-2/5 bg-brand-secondary"
-                                    />
+                                <div className="relative mx-auto my-8 aspect-square w-4/5 max-w-sm md:my-0 md:mr-[12%] md:w-[85%] md:max-w-[340px]">
+                                    <div aria-hidden="true" style={{ "--orbit": "38s" } as React.CSSProperties} className="hero-orbit absolute inset-0">
+                                        <span
+                                            style={{ "--morph": "6s", "--drift": "8.5s", "--delay": "-2s" } as React.CSSProperties}
+                                            className="hero-blob absolute top-[4%] left-[64%] size-[32%] bg-utility-blue-100"
+                                        />
+                                    </div>
                                     <div
-                                        style={{ "--morph": "18s", "--drift": "15s", "--delay": "-5s" } as React.CSSProperties}
-                                        className="hero-blob absolute inset-[8%] overflow-hidden"
+                                        aria-hidden="true"
+                                        style={{ "--orbit": "47s", "--orbit-direction": "reverse" } as React.CSSProperties}
+                                        className="hero-orbit absolute inset-0"
+                                    >
+                                        <span
+                                            style={{ "--morph": "7.5s", "--drift": "10.5s", "--delay": "-4s" } as React.CSSProperties}
+                                            className="hero-blob absolute top-[60%] left-[4%] size-[36%] bg-brand-secondary"
+                                        />
+                                    </div>
+                                    <div
+                                        style={{ "--morph": "8s", "--drift": "11s", "--delay": "-1s" } as React.CSSProperties}
+                                        className="hero-blob absolute inset-[6%] overflow-hidden"
                                     >
                                         {/* eslint-disable-next-line @next/next/no-img-element -- one fixed-size photo, already compressed */}
                                         <img
