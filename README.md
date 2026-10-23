@@ -50,6 +50,15 @@ Open http://localhost:3000. It goes to the Chinese site; switch languages from t
 | `npm run build` | Builds the production site. GitHub runs this on every pull request. |
 | `npm run start` | Serves the production build |
 
+## Preview it online
+
+The site is hosted on [Vercel](https://vercel.com), which needs no settings in this repository:
+
+- Every push to `main` updates the preview site.
+- Every pull request gets its own preview link, posted on the pull request.
+
+While the site is a preview, `src/app/robots.ts` asks search engines not to list it. When it becomes the school's real site, add the variable `ALLOW_INDEXING` with the value `true` in the Vercel project settings, and set `NEXT_PUBLIC_SITE_URL` to the real address.
+
 ## Where things live
 
 | Path | What it holds |
