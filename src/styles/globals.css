@@ -99,15 +99,29 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
-/* Course illustration tiles stay light in both themes, like printed stickers. */
-.course-tile {
-    background-color: var(--tile, #eef1f6);
+/* Course illustration tiles. In light mode they use the pastel tint; in dark mode the same hue
+   is kept but made deep and dark (oklch), so the tiles stay coloured without glowing. */
+.course-tile,
+.course-tile-gradient {
+    --tile-base: var(--tile, #eef1f6);
 }
-/* Hand-drawn ink illustrations sit lightly on the tile colour. */
+.dark-mode .course-tile,
+.dark-mode .course-tile-gradient {
+    --tile-base: oklch(from var(--tile, #eef1f6) 0.34 calc(c * 2) h);
+}
+.course-tile {
+    background-color: var(--tile-base);
+}
+/* Hand-drawn ink illustrations sit lightly on the tile colour. In dark mode the dark ink is inverted
+   to light lines so it shows on the darker tiles. */
 img[src*="/illustrations/hand-"] {
     opacity: var(--sketch-opacity, 0.35);
 }
-/* Home page course tiles: full tile colour on the left, fading to a paler shade on the right.
+.dark-mode img[src*="/illustrations/hand-"] {
+    filter: invert(1);
+    opacity: var(--sketch-opacity, 0.45);
+}
+/* Home page course tiles: full tile colour on the left, fading toward the page background on the right.
    On hover or keyboard focus the pale side fills in, so the whole tile becomes the full colour. */
 @property --tile-fade {
     syntax: "<percentage>";
@@ -116,7 +130,7 @@ img[src*="/illustrations/hand-"] {
 }
 .course-tile-gradient {
     --tile-fade: 35%;
-    background-image: linear-gradient(to right, var(--tile, #eef1f6), color-mix(in srgb, var(--tile, #eef1f6) var(--tile-fade), white));
+    background-image: linear-gradient(to right, var(--tile-base), color-mix(in srgb, var(--tile-base) var(--tile-fade), var(--color-bg-primary)));
     transition:
         --tile-fade 200ms ease-out,
         translate 150ms ease-in-out,
@@ -129,10 +143,6 @@ img[src*="/illustrations/hand-"] {
 }
 .course-tile-gradient img {
     transition: opacity 200ms ease-out;
-}
-.dark-mode .course-tile-gradient,
-.dark-mode .course-tile {
-    filter: saturate(0.9);
 }
 
 /* Hero blobs: rounded shapes that keep changing at uneven speeds, so the motion never looks like a loop.
