@@ -127,8 +127,25 @@ export type SiteSettings = {
         wechat: string;
     };
     courseTypes: CourseType[];
-    /** Home page hero, at most three slides. The first slide uses the site name and home intro when it has no title or text of its own. */
-    heroSlides: HeroSlide[];
 };
 
-export type HeroSlide = { image: string; alt: LocalizedText; title?: LocalizedText; intro?: LocalizedText };
+/** One hero slide: a heading, a short paragraph and a photo. */
+export type HeroSlide = { title: LocalizedText; intro: LocalizedText; image: string; alt: LocalizedText };
+
+/** Home page content and layout, edited at /admin/home and stored in src/content/home.json. */
+export type HomeContent = {
+    hero: {
+        /** Small red line above the first slide's heading. */
+        tagline: LocalizedText;
+        /** One to three slides. */
+        slides: HeroSlide[];
+    };
+    categories: { title: LocalizedText; intro: LocalizedText };
+    layout: {
+        photoSide: "right" | "left";
+        heroBackground: "grey" | "white";
+        showCategories: boolean;
+        /** Course tiles per row on desktop. */
+        categoryColumns: 4 | 6;
+    };
+};

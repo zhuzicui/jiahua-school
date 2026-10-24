@@ -1,5 +1,5 @@
 import type { Locale } from "@/i18n/config";
-import { courseIllustration, courseTint } from "@/lib/content";
+import { courseIllustration, courseTint } from "@/lib/course-look";
 import type { CourseType } from "@/lib/types";
 import { cx } from "@/utils/cx";
 import { T } from "./localized";

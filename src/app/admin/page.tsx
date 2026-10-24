@@ -1,19 +1,34 @@
+import { redirect } from "next/navigation";
 import { JiahuaLogo } from "@/components/brand/jiahua-logo";
 import { getDictionary } from "@/i18n/dictionary";
+import { isPasswordConfigured, isSignedIn } from "@/lib/admin-auth";
+import { AdminLanguageLinks, adminLocale } from "./admin-language";
+import { SignInForm } from "./sign-in-form";
 
-/** Placeholder until the CMS milestone adds email one-time-link and Google sign-in. */
-export default function AdminPage() {
-    const zh = getDictionary("zh").admin;
-    const en = getDictionary("en").admin;
+/** Staff sign-in. Signed-in staff go straight to the home page editor. */
+export default async function AdminPage({ searchParams }: PageProps<"/admin">) {
+    const locale = adminLocale((await searchParams).lang);
+    if (await isSignedIn()) redirect(locale === "zh" ? "/admin/home" : `/admin/home?lang=${locale}`);
+    const t = getDictionary(locale).admin;
+
     return (
-        <main className="flex min-h-dvh items-center justify-center px-4">
+        <main className="flex min-h-dvh items-center justify-center px-4 py-12">
             <div className="w-full max-w-md rounded-2xl bg-primary p-8 shadow-lg ring-1 ring-secondary">
-                <JiahuaLogo className="h-11 w-fit" />
-                <h1 className="mt-8 text-display-xs font-semibold text-primary">{zh.title}</h1>
-                <p className="mt-3 text-md text-tertiary">{zh.body}</p>
-                <p className="mt-3 text-md text-tertiary">{en.body}</p>
-                <a href="/zh" className="link mt-6 inline-block">
-                    {zh.backHome}
+                <div className="flex items-start justify-between gap-4">
+                    <JiahuaLogo className="h-11 w-fit" />
+                    <AdminLanguageLinks current={locale} path="/admin" label={t.uiLanguage} />
+                </div>
+                <h1 className="mt-8 text-display-xs font-semibold text-primary">{t.title}</h1>
+                {isPasswordConfigured() ? (
+                    <>
+                        <p className="mt-3 text-md text-tertiary">{t.signInIntro}</p>
+                        <SignInForm labels={{ password: t.password, signIn: t.signIn, wrongPassword: t.wrongPassword }} />
+                    </>
+                ) : (
+                    <p className="mt-3 text-md text-tertiary">{t.notSetUp}</p>
+                )}
+                <a href={`/${locale}`} className="link mt-6 inline-block text-sm">
+                    {t.backHome}
                 </a>
             </div>
         </main>
