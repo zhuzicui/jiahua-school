@@ -105,6 +105,7 @@ const saveToGithub = async (json: string): Promise<SaveResult> => {
 
     const put = await githubRequest(url, {
         method: "PUT",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
             message: "Edit home page from /admin/home",
             content: Buffer.from(json, "utf8").toString("base64"),
