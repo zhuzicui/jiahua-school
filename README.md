@@ -87,7 +87,7 @@ Saving commits `src/content/home.json` to GitHub, and the host rebuilds the site
 
 | Variable | What it does |
 | --- | --- |
-| `ADMIN_PASSWORD` | The shared staff password for `/admin`. Without it, the editor only opens on a developer's own computer. |
+| `ADMIN_PASSWORD` | Optional. The shared staff password for `/admin`. Without it, anyone who opens `/admin` can edit the home page. |
 | `GITHUB_TOKEN` | A fine-grained token with **Contents: read and write** on this repository only. Without it, saving is turned off on the live site. |
 | `GITHUB_REPO` | Optional. Defaults to `zhuzicui/jiahua-school`. |
 | `GITHUB_BRANCH` | Optional. Defaults to `main`. |

@@ -1,11 +1,11 @@
 import { redirect } from "next/navigation";
 import { JiahuaLogo } from "@/components/brand/jiahua-logo";
 import { getDictionary } from "@/i18n/dictionary";
-import { isPasswordConfigured, isSignedIn } from "@/lib/admin-auth";
+import { isSignedIn } from "@/lib/admin-auth";
 import { AdminLanguageLinks, adminLocale } from "./admin-language";
 import { SignInForm } from "./sign-in-form";
 
-/** Staff sign-in. Signed-in staff go straight to the home page editor. */
+/** Staff sign-in. Signed-in staff, and everyone while no password is set, go straight to the editor. */
 export default async function AdminPage({ searchParams }: PageProps<"/admin">) {
     const locale = adminLocale((await searchParams).lang);
     if (await isSignedIn()) redirect(locale === "zh" ? "/admin/home" : `/admin/home?lang=${locale}`);
@@ -19,14 +19,8 @@ export default async function AdminPage({ searchParams }: PageProps<"/admin">) {
                     <AdminLanguageLinks current={locale} path="/admin" label={t.uiLanguage} />
                 </div>
                 <h1 className="mt-8 text-display-xs font-semibold text-primary">{t.title}</h1>
-                {isPasswordConfigured() ? (
-                    <>
-                        <p className="mt-3 text-md text-tertiary">{t.signInIntro}</p>
-                        <SignInForm labels={{ password: t.password, signIn: t.signIn, wrongPassword: t.wrongPassword }} />
-                    </>
-                ) : (
-                    <p className="mt-3 text-md text-tertiary">{t.notSetUp}</p>
-                )}
+                <p className="mt-3 text-md text-tertiary">{t.signInIntro}</p>
+                <SignInForm labels={{ password: t.password, signIn: t.signIn, wrongPassword: t.wrongPassword }} />
                 <a href={`/${locale}`} className="link mt-6 inline-block text-sm">
                     {t.backHome}
                 </a>

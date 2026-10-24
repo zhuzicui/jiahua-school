@@ -25,12 +25,12 @@ export const sessionToken = () => createHmac("sha256", adminPassword()).update("
 export const isCorrectPassword = (input: string) => isPasswordConfigured() && sameText(input, adminPassword());
 
 /**
- * True when the visitor may edit. Without ADMIN_PASSWORD the editor is open only on a developer's
- * own computer (`npm run dev`), never on the live site.
+ * True when the visitor may edit. Without ADMIN_PASSWORD the editor is open to anyone who visits
+ * /admin; setting the variable turns the sign-in page on.
  */
 export const isSignedIn = async () => {
     // Read the cookie first: this keeps every admin page rendered per request, never cached at build.
     const value = (await cookies()).get(ADMIN_COOKIE)?.value;
-    if (!isPasswordConfigured()) return process.env.NODE_ENV === "development";
+    if (!isPasswordConfigured()) return true;
     return Boolean(value) && sameText(value!, sessionToken());
 };
