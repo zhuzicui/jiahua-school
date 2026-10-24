@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "tagline": {
+      "zh": "1994年创建 · 普通话教学 · 每周六在道森学院上课",
+      "fr": "Fondée en 1994 · Enseignement en mandarin · Cours le samedi au Collège Dawson",
+      "en": "Founded 1994 · Taught in Mandarin · Saturday classes at Dawson College"
+    },
+    "slides": [
+      {
+        "title": {
+          "zh": "蒙特利尔佳华学校",
+          "fr": "École Jia Hua de Montréal",
+          "en": "Jiahua School of Montreal"
+        },
+        "intro": {
+          "zh": "加拿大第一所由中国大陆专业人士创办的中文学校，自2001年起成为加拿大最大的中文学校之一。",
+          "fr": "Première école chinoise du Canada fondée par des professionnels de Chine continentale, et l'une des plus grandes au pays depuis 2001.",
+          "en": "Canada's first Chinese school founded by professionals from mainland China, and one of the largest in the country since 2001."
+        },
+        "image": "/hero/classroom.jpg",
+        "alt": {
+          "zh": "小女孩在课桌前专心写字，老师在后面辅导其他学生",
+          "fr": "Une fillette écrit attentivement à son pupitre pendant que l'enseignante aide d'autres élèves",
+          "en": "A girl writes carefully at her desk while the teacher helps other students behind her"
+        }
+      }
+    ]
+  },
+  "categories": {
+    "title": {
+      "zh": "课程类别",
+      "fr": "Types de cours",
+      "en": "Course categories"
+    },
+    "intro": {
+      "zh": "从中文、数学到美术、武术，每周六在道森学院上课。",
+      "fr": "Du chinois et des mathématiques aux arts et aux arts martiaux, tous les samedis au Collège Dawson.",
+      "en": "From Chinese and math to art and martial arts, every Saturday at Dawson College."
+    }
+  },
+  "layout": {
+    "photoSide": "right",
+    "heroBackground": "grey",
+    "showCategories": true,
+    "categoryColumns": 6
+  }
+}

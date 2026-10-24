@@ -8,7 +8,7 @@ import { Button } from "@/components/base/buttons/button";
 import { NativeSelect } from "@/components/base/select/select-native";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionary";
-import { courseIllustration, courseTint } from "@/lib/content";
+import { courseIllustration, courseTint } from "@/lib/course-look";
 import { pick } from "@/lib/text";
 import type { Course, CourseType, Weekday } from "@/lib/types";
 import { cx } from "@/utils/cx";
@@ -221,7 +221,13 @@ export const CourseExplorer = ({
                                         className="course-tile block w-14 rounded-lg p-1"
                                     >
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={courseIllustration[type.id]} alt="" width={160} height={160} className="aspect-square h-auto w-full object-contain" />
+                                        <img
+                                            src={courseIllustration[type.id]}
+                                            alt=""
+                                            width={160}
+                                            height={160}
+                                            className="aspect-square h-auto w-full object-contain"
+                                        />
                                     </span>
                                     <h2 id={`cat-${type.id}`} className="text-xl font-semibold text-primary">
                                         {label(type.id)}

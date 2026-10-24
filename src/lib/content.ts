@@ -9,6 +9,7 @@ import committeeData from "@/content/committee.json";
 import coursesData from "@/content/courses.json";
 import essaysData from "@/content/essays.json";
 import faqData from "@/content/faq.json";
+import homeData from "@/content/home.json";
 import magazineData from "@/content/magazine.json";
 import newsData from "@/content/news.json";
 import pagesData from "@/content/pages.json";
@@ -22,6 +23,7 @@ import type {
     CourseTypeId,
     Essay,
     FaqItem,
+    HomeContent,
     MagazineIssue,
     NewsPost,
     RichPage,
@@ -34,8 +36,15 @@ import type {
 export type PageKey = "about" | "insights" | "registration" | "contact" | "home";
 
 export const getSettings = () => settingsData as SiteSettings;
+export const getHome = () => homeData as HomeContent;
 export const getCourseTypes = () => getSettings().courseTypes;
 export const getCourses = () => coursesData as Course[];
+/** Number of courses per course type, for the home page tiles. */
+export const getCourseCounts = () => {
+    const counts: Partial<Record<CourseTypeId, number>> = {};
+    for (const course of getCourses()) counts[course.category] = (counts[course.category] ?? 0) + 1;
+    return counts;
+};
 export const getTeachers = () => teachersData as Teacher[];
 export const getCommittee = () => committeeData as CommitteeMember[];
 export const getTimeline = () => timelineData as TimelineYear[];
@@ -53,34 +62,4 @@ export const getNewsPost = (id: string) => getNews().find((post) => post.id === 
 /** Posts marked "Promote on home" whose end date has not passed. */
 export const getPromotedNews = (today: string) => getNews().filter((post) => post.promote && (!post.promoteUntil || post.promoteUntil >= today));
 
-/** Illustration file per course type (public/illustrations). */
-export const courseIllustration: Record<CourseTypeId, string> = {
-    chinese: "/illustrations/hand-chinese.png",
-    math: "/illustrations/hand-math.png",
-    english: "/illustrations/hand-english.png",
-    french: "/illustrations/hand-french.png",
-    art: "/illustrations/hand-art.png",
-    music: "/illustrations/hand-music.png",
-    dance: "/illustrations/hand-dance.png",
-    robotics: "/illustrations/hand-robotics.png",
-    chess: "/illustrations/hand-chess.png",
-    martial: "/illustrations/hand-taichi.png",
-    pingpong: "/illustrations/hand-pingpong.png",
-    fitness: "/illustrations/hand-fitness.png",
-};
-
-/** Tile background per course type, from the illustration palette. */
-export const courseTint: Record<CourseTypeId, string> = {
-    chinese: "#ffdfdb",
-    english: "#f7e8ca",
-    french: "#cef3e8",
-    math: "#dceaff",
-    art: "#ebe5ff",
-    music: "#ffe3d0",
-    dance: "#fbe0f7",
-    robotics: "#caf2f7",
-    chess: "#d9f2d9",
-    martial: "#ece7de",
-    pingpong: "#e8edce",
-    fitness: "#d0efff",
-};
+export { courseIllustration, courseTint } from "./course-look";

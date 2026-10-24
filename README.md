@@ -81,6 +81,23 @@ Each text field holds all three languages:
 - To show a news post on the home page, set `"promote": true` and a `"promoteUntil"` date. It always stays in the News list.
 - Course fees, teachers and rooms are blank for now and can be added to `src/content/courses.json` later.
 
+## Editing the home page in the browser
+
+Staff can edit the home page at `/admin/home`: the hero text and photos (up to 3 slides), the course categories heading, and a few layout options. A live preview shows the draft on a phone or a desktop, in any of the three languages.
+
+![Home page editor](docs/home-editor.png)
+
+Saving commits `src/content/home.json` to GitHub, and the host rebuilds the site from that commit. Set these environment variables on the host:
+
+| Variable | What it does |
+| --- | --- |
+| `ADMIN_PASSWORD` | Optional. The shared staff password for `/admin`. Without it, anyone who opens `/admin` can edit the home page. |
+| `GITHUB_TOKEN` | A fine-grained token with **Contents: read and write** on this repository only. Without it, saving is turned off on the live site. |
+| `GITHUB_REPO` | Optional. Defaults to `zhuzicui/jiahua-school`. |
+| `GITHUB_BRANCH` | Optional. Defaults to `main`. |
+
+On your own computer (`npm run dev`), saving writes `src/content/home.json` directly instead.
+
 ## Making changes
 
 1. Create a branch and edit the files.
@@ -92,8 +109,7 @@ The site is planned for [Vercel](https://vercel.com). Once the repository is con
 
 ## Coming next
 
-- Staff sign-in at `/admin`
-- Editing page text and tables (courses, teachers, calendar) in the browser, with Excel import
+- Editing the other pages' text and tables (courses, teachers, calendar) in the browser, with Excel import
 - Bulk upload for art and essays
 - A Translate button that drafts French and English for staff to review
 - Content moved from JSON files into Supabase

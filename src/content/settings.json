@@ -128,15 +128,5 @@
         "zh": "健身"
       }
     }
-  ],
-  "heroSlides": [
-    {
-      "image": "/hero/classroom.jpg",
-      "alt": {
-        "zh": "小女孩在课桌前专心写字，老师在后面辅导其他学生",
-        "fr": "Une fillette écrit attentivement à son pupitre pendant que l'enseignante aide d'autres élèves",
-        "en": "A girl writes carefully at her desk while the teacher helps other students behind her"
-      }
-    }
   ]
 }
